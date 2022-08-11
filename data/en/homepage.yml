@@ -1,0 +1,127 @@
+################################# Slider #####################################
+slider:
+  enable : true
+  bg_image : "images/backgrounds/slider-banner.jpg"
+  slider_item:
+    - title : "Open source software for official statistics"
+      animation_in : "down"
+      animation_out : "down"
+      content: "Open source software founded on the principles of consensus, co-construction, collaboration and avoiding duplication of effort"
+      # available animation : left, right, up, down
+      button:
+        enable : true
+        label : "Learn More"
+        link : "about/"
+
+    # slider item loop
+    - title : "Integrated ecosystem for practical use cases"
+      content : "An ecosystem of open-source SDMX software tools and supporting resources for official statistics use cases including data domain modelling, data collection, statistics production and statistics dissemination"
+      animation_in : "down"
+      animation_out : "down"
+      # available animation : left, right, up, down
+      button:
+        enable : true
+        label : "Explore"
+        link : "ecosystem/"
+
+############################### Banner feature ###############################
+banner_feature:
+  enable : true
+  title: "Use cases"
+  button:
+    enable : false
+    label : "More"
+    link : "usecases/"
+
+  feature_item:
+    # feature item loop
+    - name : "Data domain modelling"
+      icon : "ti-layout-accordion-list" # icon pack : https://themify.me/themify-icons
+      image : "images/banner/neural.png"
+      content : "Model data domains using the SDMX information model"
+
+    # feature item loop
+    - name : "Data collection"
+      icon : "ti-layout-media-left" # icon pack : https://themify.me/themify-icons
+      image : "images/banner/data-collection.png"
+      content : "Efficiently collect data from multiple providers"
+
+    # feature item loop
+    - name : "Statistics production"
+      icon : "ti-layout-sidebar-left" # icon pack : https://themify.me/themify-icons
+      image : "images/banner/statistic.png"
+      content : "Repeatable and systematic metadata-driven statistics production"
+
+    # feature item loop
+    - name : "Statistics dissemination"
+      icon : "ti-layout-sidebar-none" # icon pack : https://themify.me/themify-icons
+      image : "images/banner/share.png"
+      content : "Publishing statistics that are discoverable, understandable and consumable"
+
+
+############################## about ##################################
+about:
+  enable : true
+  title : "About sdmx.io"
+  partner_enabled: false
+  funfacts_enabled: false
+  image: ""
+  content : "sdmx.io is a community of organisations and open source projects collaborating and coordinating activity to deliver an integrated ecosystem of software tools for official statistics use cases"
+  button:
+    enable : true
+    label : "Learn more"
+    link : "about"
+
+
+########################## Call to action ############################
+cta:
+  enable : true
+  title : "Join the sdmx.io community"
+  button:
+    enable : true
+    label : "Signup"
+    link : "comms/signup"
+
+
+######################## Success story #############################
+success_story:
+  enable : true
+  bg_image : "images/backgrounds/fmr-success-story.webp"
+  title : "Fusion Metadata Registry"
+  content : "Fusion Metadata Registry (FMR) is an **SDMX structural metadata** registry that helps organisations **externalise and take control** of their statistical metadata with the benefits of maintainability, re-use, standardisation, harmonisation and improved metadata and data governance
+  [learn more ...](fmr)"
+  # video link
+  video_link : "https://metadatatechnology.com/assets/Custom/Video/FMR11_introduction.mp4"
+
+
+############################# event ################################
+event:
+  enable : true
+  title : "Events"
+  # event item comes from "content/**/event" folder.
+
+
+
+############################# blog ################################
+blog:
+  enable : true
+  title : "Latest articles"
+  # blog item comes from "content/**/blog" folder.
+
+############################# footer ##############################
+footer:
+  #content : ""
+  #button_link : "signup"
+  #footer_image : "images/footimage.jpg"
+  #address : "Basel, Switzerland"
+  #email : "contact@sdmx.io"
+  #subscribe_enable: true
+  policy_enable: true
+  button_title: "Signup for sdmx.io email updates"
+  twitter_enable: true
+  twitter_link: "https://twitter.com/sdmxio"
+  github_enable: true
+  github_link: "https://sdmxio.github.com"
+  signup_enable: true
+  signup_link: "comms/signup"
+

@@ -1,0 +1,14 @@
+<div class="card border-1 rounded-3 mb-5 hover-shadow">
+  <div class="card-img position-relative text-center">
+    <img class="card-img-top rounded-0" style="width:100%;" src="{{ .Params.Image | relURL }}" alt="{{ .Title }}">
+<!--    <div class="card-date">{{if lt .Date.Unix now.Unix}}<i class="fa fa-check" aria-hidden="true"></i> {{end}}{{ default (i18n "dateFormat") .Site.Params.dateformat | .Date.Format }}</div>-->
+  </div>
+  <div class="container-card-body">
+    <!-- sponsor -->
+    <p>
+    <i class="list-inline-item mr-2 text-light"></i><i class="ti-user"></i> {{ .Params.sponsor | markdownify }}
+    </p>
+    <h4 class="card-title"><a href="{{ .Permalink | relURL }}">{{ .Title }}</a></h4>
+    <p>{{ .Params.summary | truncate 100}}</p>
+  </div>
+</div>

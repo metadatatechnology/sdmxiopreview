@@ -1,0 +1,201 @@
+<!-- footer -->
+{{ $data := index .Site.Data .Site.Language.Lang }}
+<footer>
+    
+  <!-- footer content -->
+  <div class="footer bg-footer section-sm border-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-sm-8 mb-2 mb-lg-0">
+          <!-- logo -->
+          <h5 class="text-white mb-2">{{ i18n "follow_me" }}</h5>
+          {{ if .Site.Params.footer_image }}
+          <a class="logo-footer" href="{{ .Site.BaseURL | relLangURL }}"><img class="img-fluid mb-4" width="50%" src="{{ .Site.Params.footer_image | relURL }}" alt="{{ .Site.Title }}"></a>
+          {{ end }}
+          <ul class="list-unstyled">
+            {{ with $data.homepage.footer }}
+            {{ if .content }}
+            <li class="mb-4 text-color">{{ .content | markdownify }}</li>
+            {{ end }}
+            {{ if .footer_image }}
+            <li class="mb-4"><img src="{{ .footer_image | relURL }}" width="128px" alt="footer image"></li>
+            {{ end }}
+          </ul>
+              
+          <!-- Follow -->
+              <div class="mb-2">
+                  {{ if .twitter_enable}}<a href="{{.twitter_link}}" target="_blank"><i class="fab fa-twitter mr-3" style="font-size:1.5rem;color:white;"></i></a>{{end}}
+                  {{ if .github_enable}}<a href="{{.github_link}}" target="_blank"><i class="fab fa-github mr-3" style="font-size:1.5rem;color:white;"></i></a>{{end}}
+
+              </div>
+            
+<!--          Email alerts-->
+          {{ if .signup_enable}}
+          <div>
+              <a href="{{.signup_link | relURL}}"><i class="fas fa-envelope" style="font-size:1.5rem;color:white;"></i></a>  <small class="ml-2" style="color:white;">signup to receive email alerts</small>
+          </div> 
+          {{end}}
+
+          {{ end }}
+        </div>
+        <!-- company -->
+        <!--
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5 text-uppercase">{{ i18n "company" }}</h4>
+          <ul class="list-unstyled">
+            {{ range .Site.Menus.main }}
+            {{ if not .HasChildren }}
+            <li class="mb-3"><a class="text-color" href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
+            {{ end }}
+            {{ end }}
+          </ul>
+        </div>
+        -->
+
+        <!-- blog -->
+        {{ if $data.homepage.footer.blog_enable}}
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-2 mb-md-0">
+          <h5 class="text-white mb-2 ">{{ i18n "blog" }}</h5>
+          <ul class="list-unstyled">
+            {{ range first 3 (where .Site.RegularPages "Type" "post")}}
+            <small><li class="mb-1"><a class="text-color" href="{{ .Permalink | relURL }}">{{ .Title | truncate 50 }}</a></li></small>
+            {{ end }}
+          </ul>
+        </div>
+        {{end}}
+
+        <!-- policy -->
+        {{ if $data.homepage.footer.policy_enable}}
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-2 mb-md-0">
+          <h5 class="text-white mb-2 ">{{ i18n "policy" }}</h5>
+          <ul class="list-unstyled">
+            {{ range first 3 (where .Site.RegularPages "Type" "policy")}}
+            <small><li class="mb-1"><a class="text-color" href="{{ .Permalink | relURL }}">{{ .Title | truncate 50 }}</a></li></small>
+            {{ end }}
+          </ul>
+        </div>
+        {{end}}          
+        
+
+        <!-- links -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-2 mb-md-0">
+          <h5 class="text-white mb-2">{{ i18n "links" }}</h5>
+          <ul class="list-unstyled">
+            {{ range .Site.Menus.footer }}
+              <small><li class="mb-1"><a class="text-color" href="{{ .URL | relURL }}" target="_blank" rel="noopener">{{ .Name }}</a></li></small>
+            {{ end }}
+          </ul>
+        </div>
+
+
+        
+        <!-- notice -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-2 mb-md-0">
+          <h5 class="text-white mb-2 ">{{ i18n "new_notice" }}</h5>
+          <ul class="list-unstyled">
+            {{ range first 3 (where .Site.RegularPages "Type" "notice")}}
+            <small><li class="mb-1"><a class="text-color" href="{{ .Permalink | relURL }}">{{ .Title }}</a></li></small>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- copyright -->
+  <div class="copyright py-4 bg-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9 text-sm-left text-center">
+          <p class="mb-0 text-color small">{{ .Site.Params.copyright | markdownify }}</p>
+        </div>
+        <div class="col-sm-3 text-sm-right text-center">
+          <ul class="list-inline">
+            {{ range .Site.Params.social }}
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="{{ .link | safeURL }}" target="_blank" rel="noopener"><i class="fa {{.icon }} "></i></a></li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+{{ if .Site.Params.map.enable }}
+{{ "<!-- Google Map API -->" | safeHTML }}
+{{ with .Site.Params.map.gmap_api }}
+<script src="{{ . | safeURL }}"></script>
+{{ end }}
+{{ end }}
+
+{{ "<!-- JS Plugins -->" | safeHTML }}
+{{ range .Site.Params.plugins.js}}
+<script src="{{ .link | relURL }}"></script>
+{{ end }}
+
+{{ "<!-- Main Script -->" | safeHTML }}
+{{ $script := resources.Get "js/script.js" | minify}}
+<script src="{{ $script.Permalink | relURL }}"></script>
+
+{{ "<!-- google analitycs -->" | safeHTML }}
+{{ with .Site.Params.google_analitycs_id}}
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', '{{ . }}', 'auto');
+  ga('send', 'pageview');
+</script>
+{{ end }}
+
+
+{{ "<!-- Algolia -->" | safeHTML }}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/docsearch.js/2.6.3/docsearch.min.js"></script>
+<script>
+  docsearch({
+    apiKey: 'xx',
+    indexName: 'DocSearch',
+    appId: 'xx',
+    inputSelector: '#js-algolia-btn',
+    debug: false,
+  });
+</script>
+
+{{ if .Site.Params.back_to_top_button}}
+{{ partial "back-to-top.html" . }}
+{{ end }}
+
+{{ if .Site.Params.anchored }}
+{{ if eq .Type "post" }}
+<script>
+    anchors.add()
+</script>
+{{ end }}
+{{ end }}
+
+{{ if .Site.Params.code_copy_button }}
+{{ partial "code-copy-button.html" . }}
+{{ end }}
+
+<script>
+tocbot.init({
+  // Where to render the table of contents.
+  tocSelector: '#TableOfContents',
+  // Where to grab the headings to build the table of contents.
+  contentSelector: '.content',
+  // Which headings to grab inside of the contentSelector element.
+  headingSelector: 'h1, h2, h3, h4',
+  // For headings inside relative or absolute positioned containers within content.
+  hasInnerContainers: false,
+  collapseDepth: 3
+});
+</script>

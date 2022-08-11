@@ -1,0 +1,156 @@
+- id: read_more
+  translation: Read More
+
+- id: contact_form
+  translation: Contact Form
+
+- id: send
+  translation: send message
+
+- id: contact_info
+  translation: Contact Info
+
+- id: subscribe
+  translation: Subscribe
+
+- id: contact_us
+  translation: Contact Us
+
+- id: latest_article
+  translation: Latest Article
+
+- id: categories
+  translation: Categories
+
+- id: tags
+  translation: Tags
+
+- id: see_all
+  translation: See all
+
+- id: apply_now
+  translation: Register
+
+- id: posted_by
+  translation: Posted by
+
+- id: date
+  translation: Date
+
+- id: time
+  translation: time
+
+- id: category
+  translation: Category
+
+- id: duration
+  translation: duration
+
+- id: weekly
+  translation: weekly
+
+- id: partner
+  translation: partner
+
+- id: location
+  translation: location
+
+- id: event_speaker
+  translation: Event Speakers
+
+- id: more_event
+  translation: More Events
+
+- id: join
+  translation: Subscribe
+
+- id: links
+  translation: Links
+
+- id: books
+  translation: Books
+
+- id: new_notice
+  translation: Notices
+
+- id: email
+  translation: email
+
+- id: all
+  translation: All
+
+- id: download
+  translation: Download
+
+- id: dateFormat
+  translation: "January 2, 2006"
+
+- id: monthFormat
+  translation: "JANUNARY"
+
+- id: yearFormat
+  translation: "2006"
+
+- id: dayFormat
+  translation: "02"
+
+- id: yourName
+  translation: "Your name"
+
+- id: yourEmail
+  translation: "Your email address"
+
+- id: subject
+  translation: "Subject"
+
+- id: yourMessage
+  translation: "Messages"
+
+- id: publishedAt
+  translation: "Published At"
+
+- id: pageCount
+  translation: "Pages"
+
+- id: author
+  translation: "authors"
+
+- id: translators
+  translation: "translators"
+
+- id: sponsor
+  translation: "sponsor"
+
+- id: go_home
+  translation: "Go Home"
+
+- id: blog
+  translation: "Articles"
+
+- id: related_article
+  translation: "Related article"
+
+- id: toc
+  translation: "Table of content"
+
+- id: previousPost
+  translation: Previous Post
+
+- id: nextPost
+  translation: Next Post
+
+- id: word
+  translation: "words"
+
+- id: word_count
+  translation: "Word Count"
+
+- id: reading_time
+  translation: "Reading Time"
+
+- id: minute
+  translation: "Minute"
+
+ 
+- id: policy
+  translation: "Policy"
