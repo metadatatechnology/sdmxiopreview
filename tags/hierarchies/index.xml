@@ -1,0 +1,111 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Open source software for official statistics – Hierarchies</title><link>https://metadatatechnology.github.io/sdmxio/tags/hierarchies/</link><description>Recent content in Hierarchies on Open source software for official statistics</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>&amp;copy; 2022 Bank for International Settlements. All Rights Reserved.</copyright><lastBuildDate>Fri, 22 Jul 2022 22:22:00 +0800</lastBuildDate><atom:link href="https://metadatatechnology.github.io/sdmxio/tags/hierarchies/index.xml" rel="self" type="application/rss+xml"/><item><title>Creating balance equality validation rules using hierarical codelists in FMR</title><link>https://metadatatechnology.github.io/sdmxio/blog/balance-equality-validation-rules-using-hcl/</link><pubDate>Fri, 22 Jul 2022 22:22:00 +0800</pubDate><guid>https://metadatatechnology.github.io/sdmxio/blog/balance-equality-validation-rules-using-hcl/</guid><description>
+&lt;p>Balance equalities are a useful addition to the data quality toolbox for checking arithmetic consistency between data points, often to ensure financial observations are in balance.&lt;/p>
+&lt;p>In FMR they are defined as structural metadata using a non SDMX standard artefact called &lt;strong>Validation Schemes&lt;/strong>.&lt;/p>
+&lt;p>When designing a Validation Scheme, one option is to define explicit arithmetic expressions on specific variables in a dataset. However hierarchical codelists can also be used for checking aggregate consistency within datasets.&lt;/p>
+&lt;h2 id="checking-aggregate-consistency-using-custom-expressions">Checking aggregate consistency using custom expressions&lt;/h2>
+&lt;p>Aggregate balance equalities can be defined using &lt;strong>custom expressions&lt;/strong> on each dimension of a Dataflow for the purpose of checking the consistency of reported aggregates with lower-level observations. They&amp;rsquo;re typically of the form:&lt;/p>
+&lt;p>Dimension &lt;code>REF_AREA&lt;/code> (reference area)&lt;/p>
+&lt;p>&lt;code>[EUR] = [DE]+[FR]+[ES]+[IT]&lt;/code>&lt;/p>
+&lt;p>The expression states that observations for &lt;code>REF_AREA=EUR&lt;/code> must be the sum of observations for &lt;code>DE&lt;/code>, &lt;code>FR&lt;/code>, &lt;code>ES&lt;/code> and &lt;code>IT&lt;/code>.&lt;/p>
+&lt;figure class="mx-auto text-center">
+&lt;img src="example_series.png" loading="lazy" decoding="async"
+alt="Example dataset of five series" width="70%"data-img="example_series.png"
+data-caption=""
+data-width="1011"
+data-height="333"
+/>&lt;figcaption>
+&lt;p>
+&lt;small>Example dataset of five series&lt;/small>&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>Expressions can use the four basic arithmetic operators: + - * /, plus parentheses (). And in addition to the form above, the following is also valid:&lt;/p>
+&lt;p>&lt;code>0 = [EUR] – ([DE]+[FR]+[ES]+[IT])&lt;/code> &amp;hellip; where 0 can be any constant.&lt;/p>
+&lt;p>Custom expressions are a good solution where the number of consistency checks required is small. For more complex scenarios involving aggregation consistency, there is another other option.&lt;/p>
+&lt;h2 id="defining-aggregate-calculations-using-hierarchical-codelists">Defining aggregate calculations using Hierarchical Codelists&lt;/h2>
+&lt;p>In SDMX, &lt;strong>Hierarchical Codelists&lt;/strong> can be used to define how aggregates should be calculated.&lt;/p>
+&lt;p>It&amp;rsquo;s worth noting here that the information model for Hierarchical Codelists changed in SDMX 3.0:&lt;/p>
+&lt;ul>
+&lt;li>the name of the structure changed from Hierarchical Codelist in SDMX 2.1 to &lt;strong>Hierarchy&lt;/strong> in SDMX 3.0&lt;/li>
+&lt;li>the addition of the &lt;strong>Hierarchy Association&lt;/strong> structure allows hierarchies to be explicitly linked to other artefacts - in SDMX 2.1 the only way to achieve this was using Annotations&lt;/li>
+&lt;/ul>
+&lt;figure class="mx-auto text-center">
+&lt;img src="sdmx30_im_hierarchy.png" loading="lazy" decoding="async"
+alt="Hierarchical Codelist from SDMX 2.1 is now Hierarchy in the SDMX 3.0 information model" width="70%"data-img="sdmx30_im_hierarchy.png"
+data-caption=""
+data-width="893"
+data-height="545"
+/>&lt;figcaption>
+&lt;p>
+&lt;small>Hierarchical Codelist from SDMX 2.1 is now Hierarchy in the SDMX 3.0 information model&lt;/small>&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>We can achieve the same result as our example custom expression by creating a Hierarchy of the relevant codes in the &lt;code>CL_REF_AREA&lt;/code> Codelist which defines the enumerated representation for the &lt;code>REF_AREA&lt;/code> dimension:&lt;/p>
+&lt;pre tabindex="0">&lt;code>EUR
+|- DE
+|- FR
+|- ES
+|- IT
+&lt;/code>&lt;/pre>&lt;p>The approach starts to deliver greater benefits when aggregation hierarchies are deep and complex - maintenance of a single Hierarchy being simpler than multiple individual custom expressions.&lt;/p>
+&lt;p>The limitation with this approach is that the aggregation function is always assumed to be &lt;strong>sum&lt;/strong>. Use custom expressions if more complex calculations are required, for example:&lt;/p>
+&lt;p>&lt;code>[EUR] = (([UK]+[DE]+[FR]) - (([ES]+[IT]+[LUX]*10) / 2) )&lt;/code>&lt;/p>
+&lt;p>Remember also that Hierarchies are distinct from any simple parent-child relationships that may be defined as part of the Codelist. Indeed there can be any number of different Hierarchies should that need arise and a code can appear multiple times in a Hierarchy. Hierarchies can also reference codes from different Codelists but, for this use case, stick to a single Codelist.&lt;/p>
+&lt;h2 id="in-practice-using-fmr-11">In practice using FMR 11&lt;/h2>
+&lt;h3 id="1-define-a-hierarchy-of-the-relevant-codes">1. Define a Hierarchy of the relevant codes&lt;/h3>
+&lt;p>In the FMR web user interface:&lt;/p>
+&lt;ol>
+&lt;li>As an administrator or user with the appropriate Agency privileges choose &lt;strong>Items &amp;gt; Hierarchies&lt;/strong> from the left-hand menu bar.&lt;/li>
+&lt;li>Using the &amp;lsquo;cogs&amp;rsquo; structure maintenance menu, choose &lt;strong>Create New Hierarchy&lt;/strong>&lt;/li>
+&lt;li>Wizard Step 1: Enter the basic details for the new Hierarch artefact: Id, Agency, Name, Version and Description.&lt;/li>
+&lt;li>Wizard Step 2: Use the &lt;strong>Add&lt;/strong> button to add the Codelist (e.g. CL_REF_AREA)&lt;/li>
+&lt;li>Wizard Step 3: Use the &lt;strong>Add Root Codes&lt;/strong> button to add those codes that sit at the very top of the hierarchy. Select a code and use the &lt;strong>Add Child Codes&lt;/strong> button to add subordinate codes. The Hierarchy can be arbitrarily deep.&lt;/li>
+&lt;li>Choose the &lt;strong>Finish&lt;/strong> button to save the Hierarchy.&lt;/li>
+&lt;/ol>
+&lt;p>Wizard Step 4 optionally allows the hierarchy levels to be explicitly named but this is not necessary for the validation use case.&lt;/p>
+&lt;figure class="mx-auto text-center">
+&lt;img src="hierarchy_example.png" loading="lazy" decoding="async" width="70%"data-img="hierarchy_example.png"
+data-caption=""
+data-width="840"
+data-height="622"
+/>
+&lt;/figure>
+&lt;h3 id="2-create-a-validation-scheme-referencing-the-hierarchy">2. Create a Validation Scheme referencing the Hierarchy&lt;/h3>
+&lt;p>In the FMR web user interface:&lt;/p>
+&lt;ol>
+&lt;li>As an administrator or user with the appropriate Agency privileges choose &lt;strong>Data &amp;gt; Validation Schemes&lt;/strong> from the left-hand menu bar.&lt;/li>
+&lt;li>Using the &amp;lsquo;cogs&amp;rsquo; structure maintenance menu, choose &lt;strong>Create New Validation Scheme&lt;/strong>&lt;/li>
+&lt;li>Wizard Step 1: Enter the basic details for the new Hierarch artefact: Id, Agency, Name, Version and Description.&lt;/li>
+&lt;li>Wizard Step 2: Choose the Dataflow to which the validation rules will be applied.&lt;/li>
+&lt;li>Wizard Step 3: CSV Import provides a quick way enter custom expressions and can be skipped.&lt;/li>
+&lt;li>Wizard Step 4: The &lt;strong>Expression Builder&lt;/strong> is where the actual rules are defined. Start by selecting the Dimension - this must use the same Codelist as the Hierarchy was defined for.
+Choose &lt;strong>New Rule&lt;/strong> and under &lt;strong>Rule Type&lt;/strong> choose &amp;lsquo;Aggregate Using Hierarchy&amp;rsquo;. This option will be disabled if there&amp;rsquo;s no Hierarchy for the dimension&amp;rsquo;s Codelist. The Hierarchy created earlier should appear, so choose that from the list. A summary of the Hierarchy will be shown for information purposes. Choose &lt;strong>Add Rule&lt;/strong> will add the Hierarchy to the Validation Scheme as a rule on the selected dimension.&lt;/li>
+&lt;li>Choose &lt;strong>Finish&lt;/strong> to save the Validation Scheme.&lt;/li>
+&lt;/ol>
+&lt;figure class="mx-auto text-center">
+&lt;img src="hierarchy_rule.png" loading="lazy" decoding="async" width="70%"data-img="hierarchy_rule.png"
+data-caption=""
+data-width="1226"
+data-height="759"
+/>
+&lt;/figure>
+&lt;h3 id="3-test-the-validation-rules">3. Test the validation rules&lt;/h3>
+&lt;p>The new balance equality validation rule will be automatically applied whenever data is loaded for the Dataflow using the Data &amp;gt; Convert Data UI option, or through the REST API &lt;a href="https://fmrwiki.sdmxcloud.org/Asynchronous_Data_Validation_and_Transformation_Web_Service" title="data validation and transformation web service" target="_blank" rel="noopener">data validation and transformation web service&lt;/a>
+.&lt;/p>
+&lt;p>In the UI, validation results are reported under the &lt;strong>Valid Calculations&lt;/strong> category.&lt;/p>
+&lt;figure class="mx-auto text-center">
+&lt;img src="data_load.png" loading="lazy" decoding="async" width="40%"data-img="data_load.png"
+data-caption=""
+data-width="376"
+data-height="332"
+/>
+&lt;/figure>
+&lt;h2 id="summary">Summary&lt;/h2>
+&lt;p>FMR&amp;rsquo;s Validation Schemes allow the definition of data quality rules to check consistency between observation values.&lt;/p>
+&lt;p>Custom Expressions provide the flexibility of targeted rules and arithmetic expressions including addition, subtraction, multiplication and division.&lt;/p>
+&lt;p>However, for checking consistency between aggregation levels where the sum of lower levels should equal the values at higher levels, Hierarchies (Hierarchical Codelists in SDMX 2.1) could be the answer particularly where there are many levels. In these cases, a single Hierarchy replaces many discrete Custom Expressions reducing the creation and maintenance burden.&lt;/p>
+&lt;h2 id="references">References&lt;/h2>
+&lt;p>Fusion Metadata Registry: &lt;a href="https://metadatatechnology.github.io/sdmxiodownload/fmr">
+download FMR 11
+&lt;/a>&lt;br>
+Fusion Metadata Registry: &lt;a href="https://metadatatechnology.github.io/sdmxiocontainers/fmr-docker-mysql">
+FMR 11 Docker image
+&lt;/a>&lt;/p></description></item></channel></rss>

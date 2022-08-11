@@ -1,0 +1,179 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Open source software for official statistics – FMR</title><link>https://metadatatechnology.github.io/sdmxio/categories/fmr/</link><description>Recent content in FMR on Open source software for official statistics</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>&amp;copy; 2022 Bank for International Settlements. All Rights Reserved.</copyright><lastBuildDate>Fri, 22 Jul 2022 22:22:00 +0800</lastBuildDate><atom:link href="https://metadatatechnology.github.io/sdmxio/categories/fmr/index.xml" rel="self" type="application/rss+xml"/><item><title>Creating balance equality validation rules using hierarical codelists in FMR</title><link>https://metadatatechnology.github.io/sdmxio/blog/balance-equality-validation-rules-using-hcl/</link><pubDate>Fri, 22 Jul 2022 22:22:00 +0800</pubDate><guid>https://metadatatechnology.github.io/sdmxio/blog/balance-equality-validation-rules-using-hcl/</guid><description>
+&lt;p>Balance equalities are a useful addition to the data quality toolbox for checking arithmetic consistency between data points, often to ensure financial observations are in balance.&lt;/p>
+&lt;p>In FMR they are defined as structural metadata using a non SDMX standard artefact called &lt;strong>Validation Schemes&lt;/strong>.&lt;/p>
+&lt;p>When designing a Validation Scheme, one option is to define explicit arithmetic expressions on specific variables in a dataset. However hierarchical codelists can also be used for checking aggregate consistency within datasets.&lt;/p>
+&lt;h2 id="checking-aggregate-consistency-using-custom-expressions">Checking aggregate consistency using custom expressions&lt;/h2>
+&lt;p>Aggregate balance equalities can be defined using &lt;strong>custom expressions&lt;/strong> on each dimension of a Dataflow for the purpose of checking the consistency of reported aggregates with lower-level observations. They&amp;rsquo;re typically of the form:&lt;/p>
+&lt;p>Dimension &lt;code>REF_AREA&lt;/code> (reference area)&lt;/p>
+&lt;p>&lt;code>[EUR] = [DE]+[FR]+[ES]+[IT]&lt;/code>&lt;/p>
+&lt;p>The expression states that observations for &lt;code>REF_AREA=EUR&lt;/code> must be the sum of observations for &lt;code>DE&lt;/code>, &lt;code>FR&lt;/code>, &lt;code>ES&lt;/code> and &lt;code>IT&lt;/code>.&lt;/p>
+&lt;figure class="mx-auto text-center">
+&lt;img src="example_series.png" loading="lazy" decoding="async"
+alt="Example dataset of five series" width="70%"data-img="example_series.png"
+data-caption=""
+data-width="1011"
+data-height="333"
+/>&lt;figcaption>
+&lt;p>
+&lt;small>Example dataset of five series&lt;/small>&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>Expressions can use the four basic arithmetic operators: + - * /, plus parentheses (). And in addition to the form above, the following is also valid:&lt;/p>
+&lt;p>&lt;code>0 = [EUR] – ([DE]+[FR]+[ES]+[IT])&lt;/code> &amp;hellip; where 0 can be any constant.&lt;/p>
+&lt;p>Custom expressions are a good solution where the number of consistency checks required is small. For more complex scenarios involving aggregation consistency, there is another other option.&lt;/p>
+&lt;h2 id="defining-aggregate-calculations-using-hierarchical-codelists">Defining aggregate calculations using Hierarchical Codelists&lt;/h2>
+&lt;p>In SDMX, &lt;strong>Hierarchical Codelists&lt;/strong> can be used to define how aggregates should be calculated.&lt;/p>
+&lt;p>It&amp;rsquo;s worth noting here that the information model for Hierarchical Codelists changed in SDMX 3.0:&lt;/p>
+&lt;ul>
+&lt;li>the name of the structure changed from Hierarchical Codelist in SDMX 2.1 to &lt;strong>Hierarchy&lt;/strong> in SDMX 3.0&lt;/li>
+&lt;li>the addition of the &lt;strong>Hierarchy Association&lt;/strong> structure allows hierarchies to be explicitly linked to other artefacts - in SDMX 2.1 the only way to achieve this was using Annotations&lt;/li>
+&lt;/ul>
+&lt;figure class="mx-auto text-center">
+&lt;img src="sdmx30_im_hierarchy.png" loading="lazy" decoding="async"
+alt="Hierarchical Codelist from SDMX 2.1 is now Hierarchy in the SDMX 3.0 information model" width="70%"data-img="sdmx30_im_hierarchy.png"
+data-caption=""
+data-width="893"
+data-height="545"
+/>&lt;figcaption>
+&lt;p>
+&lt;small>Hierarchical Codelist from SDMX 2.1 is now Hierarchy in the SDMX 3.0 information model&lt;/small>&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>We can achieve the same result as our example custom expression by creating a Hierarchy of the relevant codes in the &lt;code>CL_REF_AREA&lt;/code> Codelist which defines the enumerated representation for the &lt;code>REF_AREA&lt;/code> dimension:&lt;/p>
+&lt;pre tabindex="0">&lt;code>EUR
+|- DE
+|- FR
+|- ES
+|- IT
+&lt;/code>&lt;/pre>&lt;p>The approach starts to deliver greater benefits when aggregation hierarchies are deep and complex - maintenance of a single Hierarchy being simpler than multiple individual custom expressions.&lt;/p>
+&lt;p>The limitation with this approach is that the aggregation function is always assumed to be &lt;strong>sum&lt;/strong>. Use custom expressions if more complex calculations are required, for example:&lt;/p>
+&lt;p>&lt;code>[EUR] = (([UK]+[DE]+[FR]) - (([ES]+[IT]+[LUX]*10) / 2) )&lt;/code>&lt;/p>
+&lt;p>Remember also that Hierarchies are distinct from any simple parent-child relationships that may be defined as part of the Codelist. Indeed there can be any number of different Hierarchies should that need arise and a code can appear multiple times in a Hierarchy. Hierarchies can also reference codes from different Codelists but, for this use case, stick to a single Codelist.&lt;/p>
+&lt;h2 id="in-practice-using-fmr-11">In practice using FMR 11&lt;/h2>
+&lt;h3 id="1-define-a-hierarchy-of-the-relevant-codes">1. Define a Hierarchy of the relevant codes&lt;/h3>
+&lt;p>In the FMR web user interface:&lt;/p>
+&lt;ol>
+&lt;li>As an administrator or user with the appropriate Agency privileges choose &lt;strong>Items &amp;gt; Hierarchies&lt;/strong> from the left-hand menu bar.&lt;/li>
+&lt;li>Using the &amp;lsquo;cogs&amp;rsquo; structure maintenance menu, choose &lt;strong>Create New Hierarchy&lt;/strong>&lt;/li>
+&lt;li>Wizard Step 1: Enter the basic details for the new Hierarch artefact: Id, Agency, Name, Version and Description.&lt;/li>
+&lt;li>Wizard Step 2: Use the &lt;strong>Add&lt;/strong> button to add the Codelist (e.g. CL_REF_AREA)&lt;/li>
+&lt;li>Wizard Step 3: Use the &lt;strong>Add Root Codes&lt;/strong> button to add those codes that sit at the very top of the hierarchy. Select a code and use the &lt;strong>Add Child Codes&lt;/strong> button to add subordinate codes. The Hierarchy can be arbitrarily deep.&lt;/li>
+&lt;li>Choose the &lt;strong>Finish&lt;/strong> button to save the Hierarchy.&lt;/li>
+&lt;/ol>
+&lt;p>Wizard Step 4 optionally allows the hierarchy levels to be explicitly named but this is not necessary for the validation use case.&lt;/p>
+&lt;figure class="mx-auto text-center">
+&lt;img src="hierarchy_example.png" loading="lazy" decoding="async" width="70%"data-img="hierarchy_example.png"
+data-caption=""
+data-width="840"
+data-height="622"
+/>
+&lt;/figure>
+&lt;h3 id="2-create-a-validation-scheme-referencing-the-hierarchy">2. Create a Validation Scheme referencing the Hierarchy&lt;/h3>
+&lt;p>In the FMR web user interface:&lt;/p>
+&lt;ol>
+&lt;li>As an administrator or user with the appropriate Agency privileges choose &lt;strong>Data &amp;gt; Validation Schemes&lt;/strong> from the left-hand menu bar.&lt;/li>
+&lt;li>Using the &amp;lsquo;cogs&amp;rsquo; structure maintenance menu, choose &lt;strong>Create New Validation Scheme&lt;/strong>&lt;/li>
+&lt;li>Wizard Step 1: Enter the basic details for the new Hierarch artefact: Id, Agency, Name, Version and Description.&lt;/li>
+&lt;li>Wizard Step 2: Choose the Dataflow to which the validation rules will be applied.&lt;/li>
+&lt;li>Wizard Step 3: CSV Import provides a quick way enter custom expressions and can be skipped.&lt;/li>
+&lt;li>Wizard Step 4: The &lt;strong>Expression Builder&lt;/strong> is where the actual rules are defined. Start by selecting the Dimension - this must use the same Codelist as the Hierarchy was defined for.
+Choose &lt;strong>New Rule&lt;/strong> and under &lt;strong>Rule Type&lt;/strong> choose &amp;lsquo;Aggregate Using Hierarchy&amp;rsquo;. This option will be disabled if there&amp;rsquo;s no Hierarchy for the dimension&amp;rsquo;s Codelist. The Hierarchy created earlier should appear, so choose that from the list. A summary of the Hierarchy will be shown for information purposes. Choose &lt;strong>Add Rule&lt;/strong> will add the Hierarchy to the Validation Scheme as a rule on the selected dimension.&lt;/li>
+&lt;li>Choose &lt;strong>Finish&lt;/strong> to save the Validation Scheme.&lt;/li>
+&lt;/ol>
+&lt;figure class="mx-auto text-center">
+&lt;img src="hierarchy_rule.png" loading="lazy" decoding="async" width="70%"data-img="hierarchy_rule.png"
+data-caption=""
+data-width="1226"
+data-height="759"
+/>
+&lt;/figure>
+&lt;h3 id="3-test-the-validation-rules">3. Test the validation rules&lt;/h3>
+&lt;p>The new balance equality validation rule will be automatically applied whenever data is loaded for the Dataflow using the Data &amp;gt; Convert Data UI option, or through the REST API &lt;a href="https://fmrwiki.sdmxcloud.org/Asynchronous_Data_Validation_and_Transformation_Web_Service" title="data validation and transformation web service" target="_blank" rel="noopener">data validation and transformation web service&lt;/a>
+.&lt;/p>
+&lt;p>In the UI, validation results are reported under the &lt;strong>Valid Calculations&lt;/strong> category.&lt;/p>
+&lt;figure class="mx-auto text-center">
+&lt;img src="data_load.png" loading="lazy" decoding="async" width="40%"data-img="data_load.png"
+data-caption=""
+data-width="376"
+data-height="332"
+/>
+&lt;/figure>
+&lt;h2 id="summary">Summary&lt;/h2>
+&lt;p>FMR&amp;rsquo;s Validation Schemes allow the definition of data quality rules to check consistency between observation values.&lt;/p>
+&lt;p>Custom Expressions provide the flexibility of targeted rules and arithmetic expressions including addition, subtraction, multiplication and division.&lt;/p>
+&lt;p>However, for checking consistency between aggregation levels where the sum of lower levels should equal the values at higher levels, Hierarchies (Hierarchical Codelists in SDMX 2.1) could be the answer particularly where there are many levels. In these cases, a single Hierarchy replaces many discrete Custom Expressions reducing the creation and maintenance burden.&lt;/p>
+&lt;h2 id="references">References&lt;/h2>
+&lt;p>Fusion Metadata Registry: &lt;a href="https://metadatatechnology.github.io/sdmxiodownload/fmr">
+download FMR 11
+&lt;/a>&lt;br>
+Fusion Metadata Registry: &lt;a href="https://metadatatechnology.github.io/sdmxiocontainers/fmr-docker-mysql">
+FMR 11 Docker image
+&lt;/a>&lt;/p></description></item><item><title>How to use an external database with the FMR Docker image</title><link>https://metadatatechnology.github.io/sdmxio/blog/how-to-use-an-external-database-with-fmr-docker/</link><pubDate>Tue, 05 Jul 2022 22:22:00 +0800</pubDate><guid>https://metadatatechnology.github.io/sdmxio/blog/how-to-use-an-external-database-with-fmr-docker/</guid><description>
+&lt;p>The standard &lt;a href="https://hub.docker.com/r/metadatatechnology/fmr-mysql" title="FMR Docker image" target="_blank" rel="noopener">FMR Docker image&lt;/a>
+is self contained in that includes everything needed to run a light-weight installation suitable for testing, personal use and light production workloads. But what happens if you want to use a database service external to the container? - SQL Server or Oracle for instance. This article explains how.&lt;/p>
+&lt;h2 id="about-fmrs-operating-database">About FMR&amp;rsquo;s operating database&lt;/h2>
+&lt;p>Just as a bit of background, FMR uses a SQL database for its operational storage - that is:&lt;/p>
+&lt;ul>
+&lt;li>structural metadata content&lt;/li>
+&lt;li>settings and configuration information&lt;/li>
+&lt;li>audits and transaction history&lt;/li>
+&lt;/ul>
+&lt;p>MySQL (5.7 and 8) is mature and free making it a good choice for many use cases. But FMR also supports Oracle (12c and 19c), Microsoft SQL Server and MariaDB.&lt;/p>
+&lt;p>During FMR installation, the database service and schema are defined either as a direct (JDBC) connection, or from FMR 11 by choosing a JNDI data source that must be pre-configured in the Java web application server.&lt;/p>
+&lt;p>When using the FMR Docker image, the installation phase has already been completed and the operating database set to the MySQL service internal to the container. However, that can be changed as explained in the following section.&lt;/p>
+&lt;h2 id="changing-the-fmr-docker-database">Changing the FMR Docker database&lt;/h2>
+&lt;h3 id="save-existing-structural-metadata-content">Save existing structural metadata content&lt;/h3>
+&lt;p>If you already have structural metadata in the container&amp;rsquo;s MySQL database, save it by exporting to file so that it can be reloaded when the new database is connected.&lt;/p>
+&lt;p>Log in as the root user:&lt;/p>
+&lt;ol>
+&lt;li>From &lt;code>Export Structures&lt;/code> in the menu bar, choose &lt;strong>All Structures&lt;/strong>. A Download Structures popup should appear.&lt;/li>
+&lt;li>Choose &lt;code>FUSION-JSON&lt;/code> from the list of formats, and check all of the boxes (Compress returned data etc)&lt;/li>
+&lt;li>Choose &lt;code>Download&lt;/code> to download all of the structures to a ZIP file which needs to be saved for later use.&lt;/li>
+&lt;/ol>
+&lt;h3 id="create-a-new-schema-on-the-external-database-service">Create a new schema on the external database service&lt;/h3>
+&lt;p>FMR creates its own tables, but needs an empty schema (or &amp;lsquo;database&amp;rsquo; depending on the terminology your database product uses). Create that and also a user account with privileges sufficient to create, modify and drop tables, insert, update and delete data. It&amp;rsquo;s this account that FMR will use to access the schema.&lt;/p>
+&lt;h3 id="change-fmrs-database-settings">Change FMR&amp;rsquo;s database settings&lt;/h3>
+&lt;p>Back in your running FMR Docker container&amp;hellip;&lt;/p>
+&lt;p>Log in as the root user:&lt;/p>
+&lt;ol>
+&lt;li>Choose &lt;code>Settings&lt;/code> &amp;gt; &lt;code>Database settings&lt;/code> from the menu bar. The current database settings reference the interal MySQL service so have:&lt;/li>
+&lt;/ol>
+&lt;pre tabindex="0">&lt;code>Database Type = MySQL
+Server = Localhost
+Port = 3306
+Schema = fmr
+UserId = fmr_user
+&lt;/code>&lt;/pre>&lt;ol start="2">
+&lt;li>Choose the type of the external database service.&lt;br>For complex environments such as Oracle configured for HA-failover, choose &lt;code>Custom&lt;/code> which allows a custom connection string to be set. For most other use cases, the standard &lt;code>MySQL&lt;/code>, &lt;code>Oracle&lt;/code> or &lt;code>SQL Server&lt;/code> configurations should be sufficient. Choose &lt;code>MySQL&lt;/code> for MariaDB. The &lt;code>JNDI&lt;/code> option requires manual modifications to the Docker container&amp;rsquo;s Apache Tomcat configuration and for that reason it&amp;rsquo;s not recommended unless you have a specific use case.&lt;/li>
+&lt;li>Set the database server hostname and port. The Docker container should inherit the DNS configuration from the host platform allowing a hostname to be used. If there are connection problems, try substituing the IP address instead.&lt;/li>
+&lt;li>Set the schema, user ID and user password.&lt;/li>
+&lt;li>Apply settings.&lt;/li>
+&lt;/ol>
+&lt;figure class="mx-auto text-center">
+&lt;img src="fmr_oracle_config.jpg" loading="lazy" decoding="async" width="80%"data-img="fmr_oracle_config.jpg"
+data-caption=""
+data-width="1263"
+data-height="650"
+/>
+&lt;/figure>
+&lt;h3 id="check-the-new-database-connection-is-working">Check the new database connection is working&lt;/h3>
+&lt;p>A &amp;lsquo;Database Updated&amp;rsquo; message means a connection has been made successfully and FMR will reload its working environment from that database.&lt;/p>
+&lt;p>The most common source of failure is problems communicating with the external database service. The error report explains more:&lt;/p>
+&lt;figure class="mx-auto text-center">
+&lt;img src="fmr_database_comms_failure.jpg" loading="lazy" decoding="async" width="80%"data-img="fmr_database_comms_failure.jpg"
+data-caption=""
+data-width="1827"
+data-height="395"
+/>
+&lt;/figure>
+&lt;h3 id="recreate-settings-and-reload-any-saved-structural-metadata">Recreate settings, and reload any saved structural metadata&lt;/h3>
+&lt;p>Settings such as Active Directory configuration and appearance aren&amp;rsquo;t exported with the structural metadata so will need to be recreated manually.&lt;/p>
+&lt;p>If structural metadata was exported in the first step, that can now be reloaded.&lt;/p>
+&lt;p>Log in as the root user:&lt;/p>
+&lt;ol>
+&lt;li>Choose &lt;code>Load Structures&lt;/code> from the FMR home page.&lt;/li>
+&lt;li>Choose the File option and locate the file saved in the first step.&lt;/li>
+&lt;li>For the Action choose &lt;code>Replace&lt;/code> and click &lt;code>Import Content&lt;/code>.&lt;/li>
+&lt;/ol>
+&lt;h2 id="summary">Summary&lt;/h2>
+&lt;p>The MySQL database service integrated with the standard FMR Docker image is convenient and suitable for many purposes, but some use cases demand a service external to the container is used. That&amp;rsquo;s possible by simply changing the the database connection details through the web user interface.&lt;/p></description></item></channel></rss>

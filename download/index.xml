@@ -1,0 +1,83 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Open source software for official statistics – Software downloads</title><link>https://metadatatechnology.github.io/sdmxio/download/</link><description>Recent content in Software downloads on Open source software for official statistics</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>&amp;copy; 2022 Bank for International Settlements. All Rights Reserved.</copyright><lastBuildDate>Mon, 08 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://metadatatechnology.github.io/sdmxio/download/index.xml" rel="self" type="application/rss+xml"/><item><title>Fusion Metadata Registry</title><link>https://metadatatechnology.github.io/sdmxio/download/fmr/</link><pubDate>Mon, 08 Aug 2022 00:00:00 +0000</pubDate><guid>https://metadatatechnology.github.io/sdmxio/download/fmr/</guid><description>
+&lt;h2 id="built-java-web-application">Built Java web application&lt;/h2>
+&lt;p>The FMR built Java application is supplied as a WAR file (web application archive) ready for deployment to a Java web application server. Apache Tomcat, Oracle Web Logic and RedHat JBoss are supported.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Version&lt;/th>
+&lt;th>Release date&lt;/th>
+&lt;th>Download&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>11.2.0&lt;/td>
+&lt;td>22 July 2022&lt;/td>
+&lt;td>&lt;a href="https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.2.0.zip" title="https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.2.0.zip" target="_blank" rel="noopener">https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.2.0.zip&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>11.1.7&lt;/td>
+&lt;td>06 July 2022&lt;/td>
+&lt;td>&lt;a href="https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.1.7.zip" title="https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.1.7.zip" target="_blank" rel="noopener">https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.1.7.zip&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>11.1.6&lt;/td>
+&lt;td>23 June 2022&lt;/td>
+&lt;td>&lt;a href="https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.1.6.zip" title="https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.1.6.zip" target="_blank" rel="noopener">https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.1.6.zip&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>11.1.5&lt;/td>
+&lt;td>01 June 2022&lt;/td>
+&lt;td>&lt;a href="https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.1.5.zip" title="https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.1.5.zip" target="_blank" rel="noopener">https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.1.5.zip&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="source-code">Source code&lt;/h2>
+&lt;p>The FMR source code is available from GitHub:&lt;/p>
+&lt;h2 id="changelog">Changelog&lt;/h2>
+&lt;p>FMR changelog: &lt;a href="https://fmrwiki.sdmxcloud.org/Change_Log" title="https://fmrwiki.sdmxcloud.org/Change_Log" target="_blank" rel="noopener">https://fmrwiki.sdmxcloud.org/Change_Log&lt;/a>
+&lt;/p></description></item><item><title>FusionXL</title><link>https://metadatatechnology.github.io/sdmxio/download/fxl/</link><pubDate>Mon, 08 Aug 2022 00:00:00 +0000</pubDate><guid>https://metadatatechnology.github.io/sdmxio/download/fxl/</guid><description>
+&lt;h2 id="fuxionxl-xlam-addin">FuxionXL XLAM addin&lt;/h2>
+&lt;p>FusionXL is supplied as a single Excel XLAM addin file that can be installed using Excel&amp;rsquo;s addin management function.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Version&lt;/th>
+&lt;th>Release date&lt;/th>
+&lt;th>Download&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>3.0.0&lt;/td>
+&lt;td>30 May 2022&lt;/td>
+&lt;td>&lt;a href="https://fmrwiki.sdmxcloud.org/File:FusionXL_3-0-0.zip" title="https://fmrwiki.sdmxcloud.org/File:FusionXL_3-0-0.zip" target="_blank" rel="noopener">https://fmrwiki.sdmxcloud.org/File:FusionXL_3-0-0.zip&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>2.6.1&lt;/td>
+&lt;td>07 Feb 2022&lt;/td>
+&lt;td>&lt;a href="https://fmrwiki.sdmxcloud.org/File:FusionXL_2-6-1.zip" title="https://fmrwiki.sdmxcloud.org/File:FusionXL_2-6-1.zip" target="_blank" rel="noopener">https://fmrwiki.sdmxcloud.org/File:FusionXL_2-6-1.zip&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>2.5.0&lt;/td>
+&lt;td>04 Aug 2021&lt;/td>
+&lt;td>&lt;a href="https://fmrwiki.sdmxcloud.org/File:FusionXL_2-5-0.zip" title="https://fmrwiki.sdmxcloud.org/File:FusionXL_2-5-0.zip" target="_blank" rel="noopener">https://fmrwiki.sdmxcloud.org/File:FusionXL_2-5-0.zip&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="source-code">Source code&lt;/h2>
+&lt;p>To access the FusionXL source code:&lt;/p>
+&lt;ol>
+&lt;li>Install the FuxionXL addin&lt;/li>
+&lt;li>In the Excel Developer tab choose Visual Basic and open the FusionXL project&lt;/li>
+&lt;/ol>
+&lt;h2 id="changelog">Changelog&lt;/h2>
+&lt;p>FMR changelog: &lt;a href="https://fmrwiki.sdmxcloud.org/FusionXL" title="https://fmrwiki.sdmxcloud.org/FusionXL" target="_blank" rel="noopener">https://fmrwiki.sdmxcloud.org/FusionXL&lt;/a>
+&lt;/p></description></item></channel></rss>

@@ -1,0 +1,62 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Open source software for official statistics – Containerised environments</title><link>https://metadatatechnology.github.io/sdmxio/containers/</link><description>Recent content in Containerised environments on Open source software for official statistics</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>&amp;copy; 2022 Bank for International Settlements. All Rights Reserved.</copyright><lastBuildDate>Fri, 05 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://metadatatechnology.github.io/sdmxio/containers/index.xml" rel="self" type="application/rss+xml"/><item><title>FMR Docker with embedded MySQL</title><link>https://metadatatechnology.github.io/sdmxio/containers/fmr-docker-mysql/</link><pubDate>Fri, 05 Aug 2022 00:00:00 +0000</pubDate><guid>https://metadatatechnology.github.io/sdmxio/containers/fmr-docker-mysql/</guid><description>
+&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>A self-contained Docker image providing everything required for a basic functional FMR installation. It&amp;rsquo;s simple to download and install requring only Docker Desktop or another Docker container runtime. Note that the instructions here are focus on Docker Desktop.&lt;/p>
+&lt;p>The content is persistent within the container so your structures will still be there even if you stop and restart.&lt;/p>
+&lt;p>This environment is a single Docker image available from the public &lt;a href="https://hub.docker.com/r/metadatatechnology/fmr-mysql">Docker Hub&lt;/a> repository.&lt;/p>
+&lt;h3 id="key-features">Key features&lt;/h3>
+&lt;ul>
+&lt;li>FMR web application and web user interface&lt;/li>
+&lt;li>Embedded MySQL operating database for persistent storage of structural metadata&lt;/li>
+&lt;li>Single root superuser account for creating and maintaining structural metadata, and administration&lt;/li>
+&lt;/ul>
+&lt;h3 id="use-cases">Use cases&lt;/h3>
+&lt;ul>
+&lt;li>Personal desktop SDMX structural metadata management tool: SDMX structure store, structure authoring and structure maintenance&lt;/li>
+&lt;li>SDMX 3.0 structural metadata registry and SDMX data processing engine suitable for light production workloads&lt;/li>
+&lt;li>FMR testing and evaluation&lt;/li>
+&lt;/ul>
+&lt;h3 id="architecture">Architecture&lt;/h3>
+&lt;ul>
+&lt;li>Fusion Metadata Registry 11&lt;/li>
+&lt;li>Apache Tomcat Java web application server&lt;/li>
+&lt;li>Embedded MariaDB (MySQL compatible) operating database&lt;/li>
+&lt;/ul>
+&lt;h3 id="system-requirements-and-pre-requisites">System requirements and pre-requisites&lt;/h3>
+&lt;ul>
+&lt;li>Windows 10/11, Linux or Apple Mac&lt;/li>
+&lt;li>Minimum of 4GB memory&lt;/li>
+&lt;/ul>
+&lt;h2 id="download-and-install">Download and install&lt;/h2>
+&lt;h4 id="install-docker-desktop">Install Docker Desktop&lt;/h4>
+&lt;p>Docker Desktop is a virtual machine for running containerised applications which is free for non-commercial use.&lt;/p>
+&lt;p>Downloaded from here: &lt;a href="https://www.docker.com/products/docker-desktop/" target="_blank">&lt;a href="https://www.docker.com/products/docker-desktop/" title="https://www.docker.com/products/docker-desktop/" target="_blank" rel="noopener">https://www.docker.com/products/docker-desktop/&lt;/a>
+&lt;/a>&lt;/p>
+&lt;h4 id="download-the-image-and-create-a-container">Download the image and create a container&lt;/h4>
+&lt;p>Start a Windows Command Prompt or a bash shell and run the following commands.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">docker pull metadatatechnology/fmr-mysql:latest
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">docker container create --name fmr --publish 8080:8080 metadatatechnology/fmr-mysql:latest
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="start-up">Start up&lt;/h2>
+&lt;h4 id="start-the-fmr-container">Start the FMR container&lt;/h4>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">docker start fmr
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The container will take between 1 and 2 minutes to start.&lt;/p>
+&lt;p>Using a normal web browser, navigate to &lt;a href="http://localhost:8080/" target="_blank">http://localhost:8080/&lt;/a>&lt;/p>
+&lt;p>The FMR home page should appear when startup is complete.
+&lt;figure class="mx-auto text-center">
+&lt;img src="fmr-homepage.png" loading="lazy" decoding="async" width="40%"data-img="fmr-homepage.png"
+data-caption=""
+data-width="1587"
+data-height="904"
+/>
+&lt;/figure>
+&lt;/p>
+&lt;h4 id="log-in-using-the-root-superuser-account">Log in using the root superuser account&lt;/h4>
+&lt;p>Log in as the root superuser to start administering the environment. The default credentials are:&lt;/p>
+&lt;ul>
+&lt;li>Username: root&lt;/li>
+&lt;li>Password: password&lt;/li>
+&lt;/ul>
+&lt;p>It&amp;rsquo;s a good idea to change the default password to something more secure which can be done in the Security section of the admin pages:&lt;br>
+&lt;a href="http://localhost:8080/settings/security/rootuseraccount.html">http://localhost:8080/settings/security/rootuseraccount.html&lt;/a>&lt;/p>
+&lt;h2 id="shutdown">Shutdown&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">docker stop fmr
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item></channel></rss>
