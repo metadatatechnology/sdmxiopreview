@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://metadatatechnology.github.io/sdmxio"
+baseURL = "https://metadatatechnology.github.io/sdmxiopreview"
 title = "Open source software for official statistics"
 # post pagination
 paginate = "10"
