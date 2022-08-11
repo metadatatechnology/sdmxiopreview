@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Open source software for official statistics – Learning resources</title><link>https://metadatatechnology.github.io/sdmxio/learn/</link><description>Recent content in Learning resources on Open source software for official statistics</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>&amp;copy; 2022 Bank for International Settlements. All Rights Reserved.</copyright><lastBuildDate>Wed, 10 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://metadatatechnology.github.io/sdmxio/learn/index.xml" rel="self" type="application/rss+xml"/><item><title>e-learning</title><link>https://metadatatechnology.github.io/sdmxio/learn/fmr-getting-started-with-docker/</link><pubDate>Wed, 10 Aug 2022 00:00:00 +0000</pubDate><guid>https://metadatatechnology.github.io/sdmxio/learn/fmr-getting-started-with-docker/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Open source software for official statistics – Learning resources</title><link>https://metadatatechnology.github.io/sdmxiopreview/learn/</link><description>Recent content in Learning resources on Open source software for official statistics</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>&amp;copy; 2022 Bank for International Settlements. All Rights Reserved.</copyright><lastBuildDate>Wed, 10 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://metadatatechnology.github.io/sdmxiopreview/learn/index.xml" rel="self" type="application/rss+xml"/><item><title>e-learning</title><link>https://metadatatechnology.github.io/sdmxiopreview/learn/fmr-getting-started-with-docker/</link><pubDate>Wed, 10 Aug 2022 00:00:00 +0000</pubDate><guid>https://metadatatechnology.github.io/sdmxiopreview/learn/fmr-getting-started-with-docker/</guid><description>
 &lt;h2 id="summary">Summary&lt;/h2>
 &lt;p>&amp;lsquo;Containerization&amp;rsquo; using Docker makes it easy to run complex software applications like FMR without the usual installation, configuration and integration tasks.&lt;/p>
 &lt;p>This self-paced e-learning course is for those new to Fusion Metadata Registry providing an introduction to the key concepts and a step-by-step tutorial on running FMR in a container using Docker Desktop.&lt;/p>
@@ -21,7 +21,7 @@
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;p>&lt;a class="btn btn-primary text-truncate" style="width: 140px;" href="https://sdmxio.thinkific.com/courses/fmr-docker-getting-started">Enroll&lt;/a>&lt;/p></description></item><item><title>Webinar</title><link>https://metadatatechnology.github.io/sdmxio/learn/fmr-validating-sdmx-data/</link><pubDate>Thu, 28 Jul 2022 00:00:00 +0000</pubDate><guid>https://metadatatechnology.github.io/sdmxio/learn/fmr-validating-sdmx-data/</guid><description>
+&lt;p>&lt;a class="btn btn-primary text-truncate" style="width: 140px;" href="https://sdmxio.thinkific.com/courses/fmr-docker-getting-started">Enroll&lt;/a>&lt;/p></description></item><item><title>Webinar</title><link>https://metadatatechnology.github.io/sdmxiopreview/learn/fmr-validating-sdmx-data/</link><pubDate>Thu, 28 Jul 2022 00:00:00 +0000</pubDate><guid>https://metadatatechnology.github.io/sdmxiopreview/learn/fmr-validating-sdmx-data/</guid><description>
 &lt;h2 id="summary">Summary&lt;/h2>
 &lt;p>1h 30m webinar we exploring how Fusion Metadata Registry&amp;rsquo;s data validation functions help improve data quality and streamline the process of data exchange. Originally given 28 July 2022.&lt;/p>
 &lt;p>While FMR&amp;rsquo;s main purpose is metadata management, it additionally provides some useful SDMX data processing functions including converting between transmission formats and transforming datasets to different structures.&lt;/p>
@@ -37,7 +37,7 @@
 &lt;li>Checking balance equalities using Validation Schemes&lt;/li>
 &lt;/ul>
 &lt;h2 id="resources">Resources&lt;/h2>
-&lt;p>&lt;i class="fal fa-file-powerpoint" style="margin-bottom: 0px;">&lt;/i>&lt;a href="https://metadatatechnology.github.io/sdmxiofiles/learn/28July22%20FMR%20validating%20SDMX%20data%20v01.pdf">
+&lt;p>&lt;i class="fal fa-file-powerpoint" style="margin-bottom: 0px;">&lt;/i>&lt;a href="https://metadatatechnology.github.io/sdmxiopreviewfiles/learn/28July22%20FMR%20validating%20SDMX%20data%20v01.pdf">
 PowerPoint presentation
 &lt;/a>&lt;br>
 &lt;i class="fal fa-video" style="margin-bottom: 0px;">&lt;/i> Webinar recording&lt;/p></description></item></channel></rss>
