@@ -33,4 +33,4 @@ The webinar is for statisticians, data engineers, IT specialists and anyone invo
 
 ## Resources
 {{% icon "fal fa-file-powerpoint" %}}{{% link "files/learn/28July22 FMR validating SDMX data v01.pdf" %}}PowerPoint presentation{{% /link %}}\
-{{% icon "fal fa-video" %}} Webinar recording
+{{% icon "fab fa-youtube" %}} <a href="https://youtu.be/3ntF1yZQTEE" target="_blank">YouTube webinar video recording</a>
