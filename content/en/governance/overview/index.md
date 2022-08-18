@@ -1,7 +1,7 @@
 ---
 title: "Overview"
 description: ""
-date: 2022-07-14T00:00:00+00:00
+date: 2022-08-18T00:00:00+00:00
 draft: false
 type: governance
 description: "About how sdmx.io is governed"
@@ -13,7 +13,9 @@ description: "About how sdmx.io is governed"
    <img width="70%" src="sdmxio-governance-structure.svg">
 </div>
 
-sdmx.io is overseen by the **[Governing Board](../governingboard)** composed of senior representatives of the members and led by the sdmx.io chair.
+<!--sdmx.io is overseen by the **[Governing Board](../governingboard)** composed of senior representatives of the members and led by the sdmx.io chair.-->
+
+sdmx.io is overseen by the **Governing Board** composed of senior representatives of the members and led by the sdmx.io chair
 
 sdmx.io is not part of the SDMX governance structure but keeps the SDMX Secretariat informed.
 
@@ -26,7 +28,8 @@ The board is responsible for:
 - Financial investment priorities and budget approval
 - Funding approval
 
-The **[Prioritisation Group](../prioritisationgroup)** reports to the board and is concerned with coordinating project roadmaps and setting workplan priorities, specifically:
+<!--The **[Prioritisation Group](../prioritisationgroup)** reports to the board and is concerned with coordinating project roadmaps and setting workplan priorities, specifically:-->
+The **Prioritisation Group** reports to the board and is concerned with coordinating project roadmaps and setting workplan priorities, specifically:
 - Identifying user needs
 - Ensuring the sdmx.io initiative is ‘doing the right thing’ by focusing effort on the correct priorities
 - Coordination of alliance members’ product roadmaps creating an integrated sdmx.io roadmap and avoid duplication of effort

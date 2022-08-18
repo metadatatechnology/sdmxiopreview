@@ -218,11 +218,11 @@ URL = "learn"
 parent = "resources"
 weight=20
 
-[[menu.main]]
-name = "Structure library"
-URL = "https://registry.sdmx.io"
-parent = "resources"
-weight=40
+#[[menu.main]]
+#name = "Structure library"
+#URL = "https://registry.sdmx.io"
+#parent = "resources"
+#weight=40
 
 
 
