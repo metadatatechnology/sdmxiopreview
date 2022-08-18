@@ -1,7 +1,7 @@
 ---
 title: "Fusion Metadata Registry"
 description: ""
-date: 2022-07-21T00:00:00+00:00
+date: 2022-08-18T00:00:00+00:00
 draft: false
 type: bootstrap
 image: "images/posts/fmr.png"
@@ -35,12 +35,36 @@ image: "images/posts/fmr.png"
                 </div>
             </section>
 
-            <section >
-                <div class="container" style="background-color:#dde9f3;">
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p><strong><img src="license.svg" width="25px"> License</strong></p>
+                            <p>Free to use and distribute under the following license terms:
+                                <a href="https://metadatatechnology.com/assets/Custom/pdf/SDMX%20Community%20Tools%20Public%20License%20Agreement.pdf">Public license agreement</a></p>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-12">
+                            <p style="padding-top:1px;">
+                                <a class="btn btn-danger text-truncate" style="width: 140px;" href="{{% baseurl %}}/download/fmr">Download</a>
+                                <a class="btn text-truncate" style="width: 140px; background-color: #818e98; color:white;" href="#docker">Docker</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section style="padding-top:100px;">
+                <div class="container shadow" style="background-color:#dde9f3;">
                     <div class="row" style="padding-top:20px; padding-bottom:20px;">
 
                         <div class="col-md-12">
-                            <p><strong>The FMR enables organisations to 'get a grip of their metadata', by externalising their statistical structural metadata with the benefits of maintainability, re-use, standardisation, harmonisation and improved metadata and data governance, achieved by:</strong></p>
+                            <p style="font-size:1.2rem;"><strong>FMR helps official statistics organisations externalise and gain control of their statistical structural metadata with the benefits of maintainability, re-use, standardisation, harmonisation and improved metadata and data governance.</strong></p>
+                            <p><strong>FMR provides:</strong></p>
                             <ul>
                                 <li>A controlled repository for SDMX structural metadata, which acts as a single source of truth for: automated metadata-driven data processing systems, metadata needed by data providers in data collections, structures for the purposes of standardisation, statistical data harmonisation, and communal benefit. Implements the SDMX 3.0 Registry specification.</li>
                                 <li>Three integrated metadata-driven data processing services: data validation, data transformation (mapping data between structures) and conversion of data between SDMX data formats. Usable through the web UI or integrated into data automation processes using the REST API.</li>
@@ -52,7 +76,7 @@ image: "images/posts/fmr.png"
             </section>
 
 
-            <section style="padding-top:50px;">
+            <section style="padding-top:100px;">
                 <div class="container">
                     <div class="row">
 
@@ -66,10 +90,10 @@ image: "images/posts/fmr.png"
                                     <div class="col-md-10">
                                         <h4 class="alert-heading">Fusion Metadata Registry 11 released</h4>
                                         <p>Fusion Metadata Registry version 11 implements the SDMX 3.0 specification.</p>
-                                        <p><a href="https://metadatatechnology.com/community/index.php">Download</a> get the <a href="https://hub.docker.com/repository/docker/metadatatechnology/fmr-mysql">Docker image</a>, or read the <a href="https://fmrwiki.sdmxcloud.org/FMR_11.0_release_notes">release notes</a></p>
+                                        <p><a href="{{% baseurl %}}/download/fmr">Download</a> get the <a href="https://hub.docker.com/repository/docker/metadatatechnology/fmr-mysql">Docker image</a>, or read the <a href="https://fmrwiki.sdmxcloud.org/FMR_11.0_release_notes">release notes</a></p>
                                         <p>
                                             Backward compatibility with SDMX 2.1 and FMR 10 has been preserved where possible allowing upgrade to FMR 11 with few changes to operating procedures and intergated systems / processes.<br> Note that FMR 11 is not compatible with existing FMR 10 databases requiring a fresh install and export / import of the structural metadata content.</p>
-                                        <p><a href="https://metadatatechnology.com/assets/Custom/Video/FMR11_introduction.mp4" target="_blank"><i class="fas fa-play" style="font-size:0.8rem;"></i> introductory video</a>
+                                        <p><a href="https://metadatatechnology.com/assets/Custom/Video/FMR11_introduction.mp4" target="_blank"> <span class="badge" style="font-size:1rem;"><i class="fas fa-play" style="font-size:0.8rem;"></i> introductory video</span></a>
                                         </p>
                                     </div>
                                 </div>
@@ -79,31 +103,19 @@ image: "images/posts/fmr.png"
                 </div>
             </section>
 
-            <section>
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-md-12">
-                            <p style="padding-top:1px;">
-                                <a class="btn btn-danger text-truncate" style="width: 140px;" href="https://metadatatechnology.com/community/index.php">Download Free</a>
-                                <a class="btn btn-primary text-truncate" style="width: 140px;" href="#docker">Docker</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
 
-            <section style="padding-top:50px;">
+
+            <section style="padding-top:100px;">
 
                 <div class="container">
                     <div class="row" style="align-items: center; justify-content: center;">
                         <div class="col-md-12">
                             <h4>Features</h4>
                             <ul class="nav nav-tabs">
-                                <li class="active mr-1"><a data-toggle="tab" href="#features"><button class="btn btn-primary-muted" type="button" style="box-shadow:none; border-radius: 10px 10px 0 0;">Full Feature List</button></a></li>
-                                <li class="mr-1"><a data-toggle="tab" href="#roadmap"><button class="btn btn-primary-muted" type="button" style="box-shadow:none; border-radius: 10px 10px 0 0;">2022 Roadmap</button></a></li>
-                                <li><a data-toggle="tab" href="#recentfeatures"><button class="btn btn-primary-muted" type="button" style="box-shadow:none; border-radius: 10px 10px 0 0;">Recent Features</button></a></li>
+                                <li class="active mr-1"><a data-toggle="tab" href="#features"><button class="btn btn-primary-muted" type="button" style="box-shadow:none; border-radius: 10px 10px 0 0; background-color: #818e98; color:white;">Full Feature List</button></a></li>
+                                <li class="mr-1"><a data-toggle="tab" href="#roadmap"><button class="btn btn-primary-muted" type="button" style="box-shadow:none; border-radius: 10px 10px 0 0; background-color: #818e98; color:white;">2022 Roadmap</button></a></li>
+                                <li><a data-toggle="tab" href="#recentfeatures"><button class="btn btn-primary-muted" type="button" style="box-shadow:none; border-radius: 10px 10px 0 0; background-color: #818e98; color:white;">Recent Features</button></a></li>
                             </ul>
                         </div>
                     </div>
@@ -1172,33 +1184,53 @@ image: "images/posts/fmr.png"
 
 
 
-            <section id="whatdoesfmrdo" style="padding-top:50px;">
+            <section id="whatdoesfmrdo" style="padding-top:100px;">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h4 style="font-size: 1.5rem;">What does Fusion Metadata Registry do?</h4>
-                            <p>Its primary function is an SDMX structural metadata registry.</p>
+                            <h4 style="font-size: 1.5rem;">Inside Fusion Metadata Registry</h4>
+                            <p>The heart of Fusion Metadata Registry is its <strong>structural metadata repository</strong> - essentially a database that implements the SDMX 3.0 information model.</p>
+                            <p>
+                            All structural metadata objects are stored according to this model which provides a rigorous dependency graph that defines and enforces the metadata's <strong>referential integrity</strong>. This strongly enforced referential integrity provides confidence that the metadata model is always complete - a DSD for instance can never exist without its referenced Codelists.</p>
+                        </div>
+                    </div>
+                    <div class="row pt-3">
+                        <div class="col-md-12 text-center">
+                            <img class="img-fluid" style="width:80%;" src="FMR_logical_architecture.png" />
+                        </div>
+                    </div>
+                    <div class="row pt-3" style="align-items: center; justify-content: center;">
+                        <div class="col-md-12">
+                            <p>FMR provides two interfaces:</p>
+                            <ul>
+                                <li><strong>Web user interface</strong>: a web interface for interactively discovering and retrieving structures, structure authoring and maintenance, and system administration.</li>
+                                <li><strong>REST application programming interface</strong>: a REST web services API for automation that implements the SDMX v2 structure REST API specification, with additional extensions for creating and modifying structures, data validatio and data transformation.</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-7">
                             <p>FMR 10 implements the <a href="https://sdmx.org/wp-content/uploads/SDMX_2-1_SECTION_5_RegistrySpecification_2020-07.pdf" target="_blank">SDMX 2.1 registry specification</a>.<br> FMR 11 implements the <a href="https://sdmx.org/wp-content/uploads/SDMX_3-0-0_SECTION_5_FINAL-1_0.pdf" target="_blank">SDMX 3.0 registry specification</a>.
                             </p>
                         </div>
                     </div>
-                    <div class="row" style="align-items: center; justify-content: center;">
-                        <div class="col-md-5">
-
-                            <p>In addition, FMR provides three built-in data processing functions:</p>
+                    <div class="row pt-3" style="align-items: center; justify-content: center;">
+                        <div class="col-md-12">
+                            <p>In addition to its core role as a structural metadata registry, FMR's integrated <strong>data processing services</strong> support:</p>
                             <ul>
-                                <li>SDMX data validation</li>
-                                <li>SDMX data format conversion - convert datasets between the SDMX transmission formats (XML, JSON, CSV, EDI)</li>
-                                <li>SDMX data mapping - transforms the structure of a dataset using SDMX structure map rules</li>
+                                <li><strong>Data validation</strong>: submitted data is checked against nine separate quality rules including consistency with the DSD, and compliance with any Data Constraints</li>
+                                <li><strong>Data conversion</strong>: conversion of SDMX datasets between transmission formats including EDI, XML, JSON, CSV and Excel</li>
+                                <li><strong>Data mapping</strong>: transformation of a dataset to a different DSD using SDMX structure mapping</li>
                             </ul>
-                            <p>Plus a function to generate Excel forms to simplify the task of authoring and reporting data for specific dataflows.</p>
                         </div>
-                        <div class="col-md-7">
-                            <img class="img-fluid" style="width:90%;" src="FMR_logical_architecture.png" />
-                        </div>
-
                     </div>
-                    <div class="row" style="align-items: center; justify-content: center;">
+                    
+                    <div class="row pt-3" style="align-items: center; justify-content: center;">
+                        <div class="col-md-12">
+                            <p>Finally <strong>for data collectors</strong>, FMR's <strong>Excel data collection forms generator</strong> generates cross-tabulation data collection forms allowing data reporters to simply fill in the blank cells with the required observation values. The precise content and layout of these forms are defined by creating templates from which a personalised form is generated for each data provider.</p>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="row" style="align-items: center; justify-content: center; padding-top: 100px;">
                         <div class="col-md-12">
                             <h4 style="font-size: 1.2rem;">Key use cases</h4>
                             <div class="text-left">
@@ -1234,13 +1266,6 @@ image: "images/posts/fmr.png"
                                 <li>No fixed limits on the volume of structures - in practice the volume of structures is limited by the available compute platform memory</li>
                             </ul>
 
-                            <p><strong>License Terms</strong><br>
-                                <a href="https://metadatatechnology.com/assets/Custom/pdf/SDMX%20Community%20Tools%20Public%20License%20Agreement.pdf">Public license agreement</a></p>
-
-                            <p><strong>Support</strong><br> Technical support contracts are available - please contact us for details.</p>
-
-                            <p><strong>Availability</strong><br>Free for all.</p>
-
 
                         </div>
 
@@ -1252,7 +1277,7 @@ image: "images/posts/fmr.png"
 
 
 
-            <section id="docker" style="padding-top:50px;">
+            <section id="docker" style="padding-top:100px;">
                 <div class="container">
                     <div class="row" style="align-items: center; justify-content: center;">
                         <div class="col-md-12">

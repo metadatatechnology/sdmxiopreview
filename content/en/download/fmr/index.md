@@ -27,7 +27,7 @@ The FMR built Java application is supplied as a WAR file (web application archiv
 |11.1.5   | 01 June 2022 | https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.1.5.zip|
 
 ## Source code
-The FMR source code is available from GitHub: 
+{{% comingsoon %}}
 
 ## Changelog
 FMR changelog: https://fmrwiki.sdmxcloud.org/Change_Log
