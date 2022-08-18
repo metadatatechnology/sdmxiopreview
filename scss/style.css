@@ -455,7 +455,7 @@ textarea.form-control {
   .content table {
     width: 100%;
     overflow-x: scroll;
-    font-size: 0.8rem;
+    font-size: 1.0rem;
     overflow-wrap: normal;
     word-wrap: normal;
     word-break: break-word;

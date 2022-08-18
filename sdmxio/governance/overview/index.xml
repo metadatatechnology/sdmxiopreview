@@ -1,4 +1,38 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Open source software for official statistics – Governance</title><link>https://metadatatechnology.github.io/sdmxiopreview/sdmxio/governance/overview/</link><description>Recent content in Governance on Open source software for official statistics</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>&amp;copy; 2022 Bank for International Settlements. All Rights Reserved.</copyright><lastBuildDate>Thu, 14 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://metadatatechnology.github.io/sdmxiopreview/sdmxio/governance/overview/index.xml" rel="self" type="application/rss+xml"/><item><title>Governing board</title><link>https://metadatatechnology.github.io/sdmxiopreview/governance/governingboard/</link><pubDate>Thu, 14 Jul 2022 00:00:00 +0000</pubDate><guid>https://metadatatechnology.github.io/sdmxiopreview/governance/governingboard/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Open source software for official statistics – Governance</title><link>https://metadatatechnology.github.io/sdmxiopreview/sdmxio/governance/overview/</link><description>Recent content in Governance on Open source software for official statistics</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>&amp;copy; 2022 Bank for International Settlements. All Rights Reserved.</copyright><lastBuildDate>Thu, 18 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://metadatatechnology.github.io/sdmxiopreview/sdmxio/governance/overview/index.xml" rel="self" type="application/rss+xml"/><item><title>Overview</title><link>https://metadatatechnology.github.io/sdmxiopreview/governance/overview/</link><pubDate>Thu, 18 Aug 2022 00:00:00 +0000</pubDate><guid>https://metadatatechnology.github.io/sdmxiopreview/governance/overview/</guid><description>
+&lt;h3 id="governance-overview">Governance overview&lt;/h3>
+&lt;div class="text-center">
+&lt;img width="70%" src="sdmxio-governance-structure.svg">
+&lt;/div>
+&lt;!--sdmx.io is overseen by the **[Governing Board](../governingboard)** composed of senior representatives of the members and led by the sdmx.io chair.-->
+&lt;p>sdmx.io is overseen by the &lt;strong>Governing Board&lt;/strong> composed of senior representatives of the members and led by the sdmx.io chair&lt;/p>
+&lt;p>sdmx.io is not part of the SDMX governance structure but keeps the SDMX Secretariat informed.&lt;/p>
+&lt;p>The board is responsible for:&lt;/p>
+&lt;ul>
+&lt;li>Setting direction&lt;/li>
+&lt;li>Policy and strategy approval&lt;/li>
+&lt;li>Coordinated sdmx.io roadmap approval&lt;/li>
+&lt;li>Comms and marketing plans approval&lt;/li>
+&lt;li>Appointment of new members approval&lt;/li>
+&lt;li>Financial investment priorities and budget approval&lt;/li>
+&lt;li>Funding approval&lt;/li>
+&lt;/ul>
+&lt;!--The **[Prioritisation Group](../prioritisationgroup)** reports to the board and is concerned with coordinating project roadmaps and setting workplan priorities, specifically:-->
+&lt;p>The &lt;strong>Prioritisation Group&lt;/strong> reports to the board and is concerned with coordinating project roadmaps and setting workplan priorities, specifically:&lt;/p>
+&lt;ul>
+&lt;li>Identifying user needs&lt;/li>
+&lt;li>Ensuring the sdmx.io initiative is ‘doing the right thing’ by focusing effort on the correct priorities&lt;/li>
+&lt;li>Coordination of alliance members’ product roadmaps creating an integrated sdmx.io roadmap and avoid duplication of effort&lt;/li>
+&lt;li>Maintain a requirements traceability matrix of tools’ functionality against user requirements&lt;/li>
+&lt;/ul>
+&lt;p>The Prioritisation Group takes input from the &lt;strong>Users Advisory Group&lt;/strong> which consists of an invited group of business users from central banks, national statistics offices, international organisations, development banks and other classes of official statistics organisations who advise on stakeholder engagement strategies within their respective communities.&lt;/p>
+&lt;h3 id="project-governance">Project governance&lt;/h3>
+&lt;p>&lt;strong>sdmx.io projects&lt;/strong> are self-governing and may determine their own governance rules consistent with sdmx.io policies and the open source definition.&lt;/p>
+&lt;h3 id="members">Members&lt;/h3>
+&lt;p>The &lt;strong>sdmx.io members&lt;/strong> are participating SDMX Sponsor organisations, plus other organisations who make a signficant contribution to the sdmx.io goals by contributing projects, funding or advocacy.&lt;/p>
+&lt;p>Founding members&lt;/p>
+&lt;p>
+&lt;img src="bis-logo-short.gif">
+&lt;/p></description></item><item><title>Governing board</title><link>https://metadatatechnology.github.io/sdmxiopreview/governance/governingboard/</link><pubDate>Thu, 14 Jul 2022 00:00:00 +0000</pubDate><guid>https://metadatatechnology.github.io/sdmxiopreview/governance/governingboard/</guid><description>
 &lt;div class="row">
 &lt;div class="col-lg-3 text-center">
 &lt;img src="user.png" width="30%;">
@@ -58,41 +92,7 @@ Member&lt;br>
 Organisation
 &lt;/p>
 &lt;/div>
-&lt;/div></description></item><item><title>Overview</title><link>https://metadatatechnology.github.io/sdmxiopreview/governance/overview/</link><pubDate>Thu, 14 Jul 2022 00:00:00 +0000</pubDate><guid>https://metadatatechnology.github.io/sdmxiopreview/governance/overview/</guid><description>
-&lt;h3 id="governance-overview">Governance overview&lt;/h3>
-&lt;div class="text-center">
-&lt;img width="70%" src="sdmxio-governance-structure.svg">
-&lt;/div>
-&lt;p>sdmx.io is overseen by the &lt;strong>&lt;a href="../governingboard" title="Governing Board">Governing Board&lt;/a>
-&lt;/strong> composed of senior representatives of the members and led by the sdmx.io chair.&lt;/p>
-&lt;p>sdmx.io is not part of the SDMX governance structure but keeps the SDMX Secretariat informed.&lt;/p>
-&lt;p>The board is responsible for:&lt;/p>
-&lt;ul>
-&lt;li>Setting direction&lt;/li>
-&lt;li>Policy and strategy approval&lt;/li>
-&lt;li>Coordinated sdmx.io roadmap approval&lt;/li>
-&lt;li>Comms and marketing plans approval&lt;/li>
-&lt;li>Appointment of new members approval&lt;/li>
-&lt;li>Financial investment priorities and budget approval&lt;/li>
-&lt;li>Funding approval&lt;/li>
-&lt;/ul>
-&lt;p>The &lt;strong>&lt;a href="../prioritisationgroup" title="Prioritisation Group">Prioritisation Group&lt;/a>
-&lt;/strong> reports to the board and is concerned with coordinating project roadmaps and setting workplan priorities, specifically:&lt;/p>
-&lt;ul>
-&lt;li>Identifying user needs&lt;/li>
-&lt;li>Ensuring the sdmx.io initiative is ‘doing the right thing’ by focusing effort on the correct priorities&lt;/li>
-&lt;li>Coordination of alliance members’ product roadmaps creating an integrated sdmx.io roadmap and avoid duplication of effort&lt;/li>
-&lt;li>Maintain a requirements traceability matrix of tools’ functionality against user requirements&lt;/li>
-&lt;/ul>
-&lt;p>The Prioritisation Group takes input from the &lt;strong>Users Advisory Group&lt;/strong> which consists of an invited group of business users from central banks, national statistics offices, international organisations, development banks and other classes of official statistics organisations who advise on stakeholder engagement strategies within their respective communities.&lt;/p>
-&lt;h3 id="project-governance">Project governance&lt;/h3>
-&lt;p>&lt;strong>sdmx.io projects&lt;/strong> are self-governing and may determine their own governance rules consistent with sdmx.io policies and the open source definition.&lt;/p>
-&lt;h3 id="members">Members&lt;/h3>
-&lt;p>The &lt;strong>sdmx.io members&lt;/strong> are participating SDMX Sponsor organisations, plus other organisations who make a signficant contribution to the sdmx.io goals by contributing projects, funding or advocacy.&lt;/p>
-&lt;p>Founding members&lt;/p>
-&lt;p>
-&lt;img src="bis-logo-short.gif">
-&lt;/p></description></item><item><title>Prioritisation group</title><link>https://metadatatechnology.github.io/sdmxiopreview/governance/prioritisationgroup/</link><pubDate>Thu, 14 Jul 2022 00:00:00 +0000</pubDate><guid>https://metadatatechnology.github.io/sdmxiopreview/governance/prioritisationgroup/</guid><description>
+&lt;/div></description></item><item><title>Prioritisation group</title><link>https://metadatatechnology.github.io/sdmxiopreview/governance/prioritisationgroup/</link><pubDate>Thu, 14 Jul 2022 00:00:00 +0000</pubDate><guid>https://metadatatechnology.github.io/sdmxiopreview/governance/prioritisationgroup/</guid><description>
 &lt;div class="row">
 &lt;div class="col-lg-3 text-center">
 &lt;img src="user.png" width="30%;">
