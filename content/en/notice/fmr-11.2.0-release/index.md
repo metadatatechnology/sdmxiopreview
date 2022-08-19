@@ -4,7 +4,7 @@ date: 2022-07-22T00:00:00+00:00
 draft: false
 bg_image: "images/backgrounds/page-title.jpg"
 description: "Fusion Metadata Registry update"
-link: "https://metadatatechnology.com/community/"
+link: "download/fmr"
 button_text: "Download"
 type: "notice"
 ---

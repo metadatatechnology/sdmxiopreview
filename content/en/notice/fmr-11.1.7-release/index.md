@@ -5,7 +5,7 @@ draft: false
 bg_image: "images/backgrounds/page-title.jpg"
 aliases: "/posts/a-ballerina-china-ambassador-required"
 description: "Fusion Metadata Registry update"
-link: "https://metadatatechnology.com/community/"
+link: "download/fmr"
 button_text: "Download"
 type: "notice"
 ---
