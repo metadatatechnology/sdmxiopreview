@@ -124,6 +124,9 @@ image: "images/posts/fmr.png"
                 <div class="tab-content">
                     <div class="container tab-pane fade in active " style="opacity:100;" id="features">
                         <div class="row" style="align-items: center; justify-content: center;">
+                            <div class="col-md-12 pb-4">
+                                <span style="font-size: 1.4rem; font-weight: 600;">Feature list</span>
+                            </div>                                    
                             <div class="col-md-12">
 
                                 <table class="table table-sm shadow">
@@ -1038,9 +1041,12 @@ image: "images/posts/fmr.png"
 
                         <!--                        <div class="row" style="align-items: center; justify-content: center;">-->
                         <div class="row">
+                            <div class="col-md-12 pb-4">
+                                <span style="font-size: 1.4rem; font-weight: 600;">2022 Roadmap</span>
+                            </div>
                             <div class="col-md-6">
                                 <h4>Prioritised General Enhancements workstream</h4>
-                                <span class="badge badge-success">Complete</span>
+                                <span class="badge badge-success" style="background-color:lightgreen;">Complete</span>
                                 <dt>Publication tables</dt> FMR 11.1.4
                                 <dd>New presentational metadata artefact describing curated tables of statistics for publication on websites or dashboards <a href="https://wiki.sdmxcloud.org/Publication_Table" target="_blank">(more)</a></dd>
 
@@ -1051,13 +1057,20 @@ image: "images/posts/fmr.png"
 
                                 <dt>Improved data processing performance</dt> FMR 11.1.6
                                 <dd>Improved performance and reduced memory requirements when loading, validating, mapping and converting large datasets
-                                </dd>                                      
+                                </dd>     
+                                
+                                <dt>Reference metadata</dt> FMR 11.2.0
+                                <dd>Author Metadata Structure Definitions and Metadataflows<br>
+                                    Store and retrieve reference metadata reports (metadatasets)<br>
+                                    <a href="https://fmrwiki.sdmxcloud.org/Reference_Metadata">more...</a>
+                                </dd>  
+                                
+                                <dt>Certificate authentication</dt> FMR 11.2.0
+                                <dd>Use <a href="https://fmrwiki.sdmxcloud.org/Configure_X509_Certificate_Authentication" target="_blank">X509 certificates</a> to automatically authenticate with FMR's secure web services without the need to pass username / password credentials
+                                </dd>                                        
 
                                 <span class="badge badge-success">On work plan</span>
                                 <dl>
-
-                                    <dt>Reference metadata reports (metadataset)</dt>
-                                    <dd>Support for reference metadata report / metadataset artefacts</dd>
                                     <dt>SDMX-JSON 3.0 structure format</dt>
                                     <dd>Support for the SDMX 3.0 JSON transmission format for structural metadata</dd>
                                     <dt>Improved error handling framework</dt>
@@ -1095,8 +1108,21 @@ image: "images/posts/fmr.png"
                     <div class="container tab-pane fade" id="recentfeatures">
                         <div>
                             <div class="row">
+                                <div class="col-md-12 pb-4">
+                                    <span style="font-size: 1.4rem; font-weight: 600;">Recent features</span>
+                                </div>                                
                                 <div class="col-md-12">
                                     <p>See the <a href="https://fmrwiki.sdmxcloud.org/Change_Log">full changelog</a> for details of all new features and bug fixes.</p>
+                                    <strong>11.2.0 - July 2022</strong>
+                                    <ul>
+                                        <li><a href="https://fmrwiki.sdmxcloud.org/Reference_Metadata" target="_blank">Reference metadata</a> support</li>
+                                        <li><a href="https://fmrwiki.sdmxcloud.org/Configure_X509_Certificate_Authentication" target="_blank">Certificate authentication</a> support</li>
+                                    </ul>                                       
+                                    <strong>11.1.7 - July 2022</strong>
+                                    <ul>
+                                        <li>Interactive UI for synchronising structures between FMR environments such as TEST and LIVE - compare the contents of two FMR environments and push / pull selected differences</li>
+                                        <li>Publication Tables <a href="https://wiki.sdmxcloud.org/Publication_Table#Footnotes" target="_blank">footnotes</a> support</li>
+                                    </ul>                                    
                                     <strong>11.1.6 - June 2022</strong>
                                     <ul>
                                         <li>New REST API web service parameter to control how duplicate obervations are handled on validation and transformation</li>
