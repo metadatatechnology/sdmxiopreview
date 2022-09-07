@@ -19,9 +19,9 @@ sponsor : "BIS"
 # event speaker
 speaker:
   # speaker loop
-  - name : "Glenn Tice"
+  - name : "Matt Nelson"
     #image : "images/event-speakers/glenn_tice.jpg"
-    designation : "BIS"
+    designation : "Bank for International Settlements (MEDIT)"
 
 # type
 type: "event"
