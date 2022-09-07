@@ -20,19 +20,4 @@
 &lt;li>Validating the completed Excel forms and converting to other SDMX formats&lt;/li>
 &lt;/ul>
 &lt;p>More on SDMX at &lt;a href="https://sdmx.org" title="sdmx.org" target="_blank" rel="noopener">sdmx.org&lt;/a>
-.&lt;/p></description></item><item><title>Fusion Metadata Registry - validating data</title><link>https://metadatatechnology.github.io/sdmxiopreview/event/fmr-validating-data/fmr-validating_data-20220728/</link><pubDate>Thu, 28 Jul 2022 13:00:17 +0600</pubDate><guid>https://metadatatechnology.github.io/sdmxiopreview/event/fmr-validating-data/fmr-validating_data-20220728/</guid><description>
-&lt;h3 id="webinar">Webinar&lt;/h3>
-&lt;p>&lt;strong>Fusion Metadata Registry&lt;/strong> (FMR) is the free to use SDMX structural metadata registry from the BIS supporting EDI, SDMX 2.0, 2.1 and 3.0. FMR enables official statistics organisations to externalise, centralise and control all SDMX structures including Codelists, Concepts and DSDs with the benefits of maintainability, re-use, standardisation, harmonisation and improved metadata and data governance.&lt;/p>
-&lt;p>While metadata management is its main purpose, FMR additionally provides some useful SDMX data processing functions including converting between transmission formats and transforming datasets to different structures.&lt;/p>
-&lt;p>It also provides a service for validating SDMX data which is the subject of this webinar.
-The webinar is for statisticians, data engineers, IT specialists and anyone involved in collecting, reporting or processing SDMX data. More on SDMX at &lt;a href="https://sdmx.org" title="https://sdmx.org" target="_blank" rel="noopener">https://sdmx.org&lt;/a>
-.
-By attending you will learn about:&lt;/p>
-&lt;ul>
-&lt;li>FMR data validation use cases&lt;/li>
-&lt;li>Validating data interactively using FMR’s web user interface&lt;/li>
-&lt;li>The validation rules available in FMR&lt;/li>
-&lt;li>Using Concept representations and Constraints to define the universe of valid data&lt;/li>
-&lt;li>Checking balance equalities using Validation Schemes&lt;/li>
-&lt;/ul>
-&lt;p>Register now.&lt;/p></description></item></channel></rss>
+.&lt;/p></description></item></channel></rss>
