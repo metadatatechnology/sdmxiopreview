@@ -1,7 +1,7 @@
 ################################# Slider #####################################
 slider:
   enable : true
-  bg_image : "images/backgrounds/slider-banner.jpg"
+  bg_image : "images/backgrounds/slider-banner.png"
   slider_item:
     - title : "Open source software for official statistics"
       animation_in : "down"

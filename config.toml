@@ -88,7 +88,8 @@ link = "plugins/fontawesome-pro-5.0.13/svg-with-js/js/fontawesome-all.min.js"
 
 #################### default parameters ################################
 [params]
-logo = "images/logo.png"
+#logo = "images/logo.png"
+logo = "images/Kraken_v03.svg"
 # Meta data
 description = "sdmx.io"
 author = "sdmx.io"
