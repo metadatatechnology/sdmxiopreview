@@ -252,7 +252,7 @@ a h4:hover {
 
 .bg-cover {
   background-size: cover;
-  background-position: center center;
+  background-position: left;
   background-repeat: no-repeat; }
 
 .border-primary {
