@@ -20,8 +20,14 @@
   <div class="navigation w-100 {{ if .Site.Params.top_header }} top-hider {{ end }}">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light p-0">
-        <a class="navbar-brand" href="{{ .Site.BaseURL | relLangURL }}"><img class="img-fluid" width="200px"
-            src="{{ .Site.Params.logo | relURL }}" alt="{{ .Site.Title }}"></a>
+        <div style="min-width:300px; max-height: 100px; overflow: visible">
+            <a class="navbar-brand  d-none d-lg-block" href="{{ .Site.BaseURL | relLangURL }}"><img class="img-fluid" width="140px" style="z-index: 100; position: relative;"
+                src="{{ .Site.Params.logo | relURL }}" alt="{{ .Site.Title }}"><span style="color:white; font-family: sans-serif; font-weight:800; font-size:2.0rem; padding-left:10px;">sdmx.io</span>
+            </a>
+            <a class="navbar-brand d-lg-none" href="{{ .Site.BaseURL | relLangURL }}"><span style="color:white; font-family: sans-serif; font-weight:800; font-size:2.0rem; padding-left:10px;">sdmx.io</span>
+            </a>
+              
+        </div>
 
   
         <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
