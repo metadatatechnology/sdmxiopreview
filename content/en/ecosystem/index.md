@@ -6,7 +6,7 @@ draft: false
 type: ecosystem
 ---
 # The sdmx.io tools ecosystem
-The sdmx.io ecosystem includes a collection of open source SDMX software tools cooperating to solve official statisics use cases.
+The sdmx.io ecosystem includes a collection of open source SDMX software tools cooperating to solve official statistics use cases.
 
 <img width="100%" src="ecosystem.svg">
 
@@ -67,7 +67,7 @@ Typical use cases include:
 [More about FMR](../fmr)
 
 # FusionXL (FXL)
-FusionXL is an Excel interface for FMR that compliments and provides an alternative to the web user interface. The following functions are supported:
+FusionXL is an Excel interface for FMR that complements and provides an alternative to the web user interface. The following functions are supported:
 - **Structure Explorer** - browse the structural metadata and work with artefacts such as Concepts, Codelists and DSDs in Excel worksheets. Create new structures and maintain existing ones, for instance: add new codes to a Codelist.
 - **Data Author, Validate**, Convert - create SDMX datasets using helpers to set the correct structure and pick codes. Validate the dataset and convert it to any of the standard SDMX transmission formats including XML, JSON and EDI.
 
