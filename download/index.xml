@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Open source software for official statistics – Software downloads</title><link>https://metadatatechnology.github.io/sdmxiopreview/download/</link><description>Recent content in Software downloads on Open source software for official statistics</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>&amp;copy; 2022 Bank for International Settlements. All Rights Reserved.</copyright><lastBuildDate>Mon, 08 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://metadatatechnology.github.io/sdmxiopreview/download/index.xml" rel="self" type="application/rss+xml"/><item><title>Fusion Metadata Registry</title><link>https://metadatatechnology.github.io/sdmxiopreview/download/fmr/</link><pubDate>Mon, 08 Aug 2022 00:00:00 +0000</pubDate><guid>https://metadatatechnology.github.io/sdmxiopreview/download/fmr/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home – Software downloads</title><link>https://metadatatechnology.github.io/sdmxiopreview/download/</link><description>Recent content in Software downloads on Home</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>&amp;copy; 2022 Bank for International Settlements. All Rights Reserved.</copyright><lastBuildDate>Fri, 09 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://metadatatechnology.github.io/sdmxiopreview/download/index.xml" rel="self" type="application/rss+xml"/><item><title>Fusion Metadata Registry</title><link>https://metadatatechnology.github.io/sdmxiopreview/download/fmr/</link><pubDate>Fri, 09 Sep 2022 00:00:00 +0000</pubDate><guid>https://metadatatechnology.github.io/sdmxiopreview/download/fmr/</guid><description>
 &lt;h2 id="built-java-web-application">Built Java web application&lt;/h2>
 &lt;p>The FMR built Java application is supplied as a WAR file (web application archive) ready for deployment to a Java web application server. Apache Tomcat, Oracle Web Logic and RedHat JBoss are supported.&lt;/p>
 &lt;table>
@@ -10,6 +10,12 @@
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
+&lt;tr>
+&lt;td>11.2.1&lt;/td>
+&lt;td>09 Sept 2022&lt;/td>
+&lt;td>&lt;a href="https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.2.1.zip" title="https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.2.1.zip" target="_blank" rel="noopener">https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.2.1.zip&lt;/a>
+&lt;/td>
+&lt;/tr>
 &lt;tr>
 &lt;td>11.2.0&lt;/td>
 &lt;td>22 July 2022&lt;/td>

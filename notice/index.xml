@@ -1,4 +1,20 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Open source software for official statistics – Notice</title><link>https://metadatatechnology.github.io/sdmxiopreview/notice/</link><description>Recent content in Notice on Open source software for official statistics</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>&amp;copy; 2022 Bank for International Settlements. All Rights Reserved.</copyright><lastBuildDate>Fri, 22 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://metadatatechnology.github.io/sdmxiopreview/notice/index.xml" rel="self" type="application/rss+xml"/><item><title>FMR 11.2.0 release</title><link>https://metadatatechnology.github.io/sdmxiopreview/notice/fmr-11.2.0-release/</link><pubDate>Fri, 22 Jul 2022 00:00:00 +0000</pubDate><guid>https://metadatatechnology.github.io/sdmxiopreview/notice/fmr-11.2.0-release/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home – Notice</title><link>https://metadatatechnology.github.io/sdmxiopreview/notice/</link><description>Recent content in Notice on Home</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>&amp;copy; 2022 Bank for International Settlements. All Rights Reserved.</copyright><lastBuildDate>Fri, 09 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://metadatatechnology.github.io/sdmxiopreview/notice/index.xml" rel="self" type="application/rss+xml"/><item><title>FMR 11.2.1 release</title><link>https://metadatatechnology.github.io/sdmxiopreview/notice/fmr-11.2.1-release/</link><pubDate>Fri, 09 Sep 2022 00:00:00 +0000</pubDate><guid>https://metadatatechnology.github.io/sdmxiopreview/notice/fmr-11.2.1-release/</guid><description>
+&lt;h1 id="version-1121-released-20220909">Version 11.2.1 (Released: 2022/09/09)&lt;/h1>
+&lt;p>&lt;strong>New Features:&lt;/strong>&lt;/p>
+&lt;p>FMR11-174 - Publication Tables: Formatting of Missing Values support ObsValue=NaN &lt;a href="https://github.com/MEDIT-Org/fmr/issues/253" title="https://github.com/MEDIT-Org/fmr/issues/253" target="_blank" rel="noopener">https://github.com/MEDIT-Org/fmr/issues/253&lt;/a>
+&lt;br>
+FMR11-175 - Support Reading of Reference Metadata (with restrictions) in version 2.1 SDMX &lt;a href="https://github.com/MEDIT-Org/fmr/issues/250" title="https://github.com/MEDIT-Org/fmr/issues/250" target="_blank" rel="noopener">https://github.com/MEDIT-Org/fmr/issues/250&lt;/a>
+\&lt;/p>
+&lt;p>&lt;strong>Bug Fixes:&lt;/strong>
+FMR11-169 - SDMX CSV v1 Data Reader does not allow header fields (row 1) to be double quoted&lt;br>
+FMR11-170 - Bulk Export - spelling mistake on Raw help text&lt;br>
+FMR11-171 - Order of revisions not as expected&lt;br>
+FMR11-176 - OBS_PRE_BREAK validation corrected &lt;a href="https://github.com/MEDIT-Org/fmr/issues/65" title="https://github.com/MEDIT-Org/fmr/issues/65" target="_blank" rel="noopener">https://github.com/MEDIT-Org/fmr/issues/65&lt;/a>
+&lt;br>
+FMR11-178 - Quadruplet in EDI vs the other formats in the context of data consolidation or integration &lt;a href="https://github.com/MEDIT-Org/fmr/issues/118" title="https://github.com/MEDIT-Org/fmr/issues/118" target="_blank" rel="noopener">https://github.com/MEDIT-Org/fmr/issues/118&lt;/a>
+&lt;br>
+FMR11-179 - SDMX DSD output may include invalid attribute &amp;ldquo;isMultiLingual&amp;rdquo; &lt;a href="https://github.com/MEDIT-Org/fmr/issues/255" title="https://github.com/MEDIT-Org/fmr/issues/255" target="_blank" rel="noopener">https://github.com/MEDIT-Org/fmr/issues/255&lt;/a>
+\&lt;/p></description></item><item><title>FMR 11.2.0 release</title><link>https://metadatatechnology.github.io/sdmxiopreview/notice/fmr-11.2.0-release/</link><pubDate>Fri, 22 Jul 2022 00:00:00 +0000</pubDate><guid>https://metadatatechnology.github.io/sdmxiopreview/notice/fmr-11.2.0-release/</guid><description>
 &lt;h1 id="version-1120-released-20220722">Version 11.2.0 (Released: 2022/07/22)&lt;/h1>
 &lt;p>&lt;strong>New Feature:&lt;/strong>&lt;/p>
 &lt;p>FMR11-164 - Support Reference Metadata&lt;br>
