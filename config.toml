@@ -1,6 +1,6 @@
 ######################## default configuration ####################
 baseURL = "https://metadatatechnology.github.io/sdmxiopreview"
-title = "Open source software for official statistics"
+title = "Home"
 # post pagination
 paginate = "10"
 # post excerpt
@@ -163,7 +163,7 @@ parent = "about"
 
 [[menu.main]]
 name = "Governance"
-url= "governance/overview"
+url= "governance"
 weight=1
 parent = "about"
 

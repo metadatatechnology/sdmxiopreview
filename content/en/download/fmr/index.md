@@ -1,8 +1,8 @@
 ---
 title: "Fusion Metadata Registry"
-summary: "SDMX structural metadata registry with structre maintenance UI and data processing services"
+summary: "SDMX structural metadata registry with structure maintenance UI and data processing services"
 # Publish date
-publishDate: "2022-08-08T00:00:00Z"
+publishDate: "2022-09-09T00:00:00Z"
 # post save as draft
 draft: false
 # Image
@@ -21,6 +21,7 @@ The FMR built Java application is supplied as a WAR file (web application archiv
 
 | Version | Release date | Download |
 |---------|----------------|-------------------------------------------------------------------------|
+|11.2.1   | 09 Sept 2022 | https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.2.1.zip
 |11.2.0   | 22 July 2022 | https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.2.0.zip|
 |11.1.7   | 06 July 2022 | https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.1.7.zip|
 |11.1.6   | 23 June 2022 | https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.1.6.zip|
