@@ -168,6 +168,12 @@ weight=1
 parent = "about"
 
 [[menu.main]]
+name = "Partners"
+url= "partner"
+weight=2
+parent = "about"
+
+[[menu.main]]
 name = "Ecosystem"
 weight=2
 identifier="ecosystem"
