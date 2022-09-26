@@ -15,7 +15,7 @@ Topic: "Conversion"
 ---
 
 ## Fusion Transformer 
-Fusion Transformer is a Java command line application that can be run on both Windows and Unix for transforming SDMX data and structure files supporting 
+Fusion Transformer is a Java command line application that can be run on both Windows and Unix for transforming SDMX data and structure files supporting EDI, XML, JSON and CSV.
 
 | Version | Release date | Download |
 |---------|----------------|-------------------------------------------------------------------------|
