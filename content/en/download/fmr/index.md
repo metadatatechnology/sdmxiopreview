@@ -13,7 +13,7 @@ download_url : "https://hub.docker.com/r/metadatatechnology/fmr-mysql"
 sponsor : "BIS"
 # type
 type: "download"
-Topic: "FMR"
+Topic: "Registry"
 ---
 
 ## Built Java web application
@@ -21,7 +21,8 @@ The FMR built Java application is supplied as a WAR file (web application archiv
 
 | Version | Release date | Download |
 |---------|----------------|-------------------------------------------------------------------------|
-|11.2.1   | 09 Sept 2022 | https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.2.1.zip
+|11.3.0   | 26 Sept 2022 | https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.3.0.zip|
+|11.2.1   | 09 Sept 2022 | https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.2.1.zip|
 |11.2.0   | 22 July 2022 | https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.2.0.zip|
 |11.1.7   | 06 July 2022 | https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.1.7.zip|
 |11.1.6   | 23 June 2022 | https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.1.6.zip|

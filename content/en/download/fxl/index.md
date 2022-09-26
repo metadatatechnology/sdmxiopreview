@@ -11,7 +11,7 @@ image: "images/products/fxl.png"
 sponsor : "BIS"
 # type
 type: "download"
-Topic: "FusionXL"
+Topic: "Excel"
 ---
 
 ## FuxionXL XLAM addin 

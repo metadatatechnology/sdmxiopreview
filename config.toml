@@ -260,14 +260,28 @@ weight = 20
 [[menu.footer]]
 name = "BIS Open Tech"
 URL = "https://www.bis.org/innovation/bis_open_tech_sdmx.htm"
+weight = 10
 
 [[menu.footer]]
-name = "SDMX"
+name = "SDMX official website"
 URL = "https://sdmx.org"
+weight = 20
 
 [[menu.footer]]
 name = "SDMX Global Registry"
 URL = "https://registry.sdmx.org"
+weight = 30
+
+[[menu.footer]]
+name = "SDMX REST v1 GitHub"
+URL = "https://github.com/sdmx-twg/sdmx-rest/tree/v1.5.0"
+weight = 40
+
+[[menu.footer]]
+name = "SDMX REST v2 GitHub"
+URL = "https://github.com/sdmx-twg/sdmx-rest"
+weight = 50
+
 
 
 [markup]
