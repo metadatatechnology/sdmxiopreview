@@ -1,6 +1,6 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home – Software downloads</title><link>https://metadatatechnology.github.io/sdmxiopreview/download/</link><description>Recent content in Software downloads on Home</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>&amp;copy; 2022 Bank for International Settlements. All Rights Reserved.</copyright><lastBuildDate>Mon, 26 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://metadatatechnology.github.io/sdmxiopreview/download/index.xml" rel="self" type="application/rss+xml"/><item><title>Fusion Transformer</title><link>https://metadatatechnology.github.io/sdmxiopreview/download/ft/</link><pubDate>Mon, 26 Sep 2022 00:00:00 +0000</pubDate><guid>https://metadatatechnology.github.io/sdmxiopreview/download/ft/</guid><description>
 &lt;h2 id="fusion-transformer">Fusion Transformer&lt;/h2>
-&lt;p>Fusion Transformer is a Java command line application that can be run on both Windows and Unix for transforming SDMX data and structure files supporting&lt;/p>
+&lt;p>Fusion Transformer is a Java command line application that can be run on both Windows and Unix for transforming SDMX data and structure files supporting EDI, XML, JSON and CSV.&lt;/p>
 &lt;table>
 &lt;thead>
 &lt;tr>
