@@ -1,4 +1,20 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home – Notice</title><link>https://metadatatechnology.github.io/sdmxiopreview/notice/</link><description>Recent content in Notice on Home</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>&amp;copy; 2022 Bank for International Settlements. All Rights Reserved.</copyright><lastBuildDate>Fri, 09 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://metadatatechnology.github.io/sdmxiopreview/notice/index.xml" rel="self" type="application/rss+xml"/><item><title>FMR 11.2.1 release</title><link>https://metadatatechnology.github.io/sdmxiopreview/notice/fmr-11.2.1-release/</link><pubDate>Fri, 09 Sep 2022 00:00:00 +0000</pubDate><guid>https://metadatatechnology.github.io/sdmxiopreview/notice/fmr-11.2.1-release/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home – Notice</title><link>https://metadatatechnology.github.io/sdmxiopreview/notice/</link><description>Recent content in Notice on Home</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>&amp;copy; 2022 Bank for International Settlements. All Rights Reserved.</copyright><lastBuildDate>Mon, 26 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://metadatatechnology.github.io/sdmxiopreview/notice/index.xml" rel="self" type="application/rss+xml"/><item><title>FMR 11.3.0 release</title><link>https://metadatatechnology.github.io/sdmxiopreview/notice/fmr-11.3.0-release/</link><pubDate>Mon, 26 Sep 2022 00:00:00 +0000</pubDate><guid>https://metadatatechnology.github.io/sdmxiopreview/notice/fmr-11.3.0-release/</guid><description>
+&lt;h1 id="version-1130-released-20220926">Version 11.3.0 (Released: 2022/09/26)&lt;/h1>
+&lt;p>&lt;strong>New Features:&lt;/strong>&lt;/p>
+&lt;p>FMR11-187 - Support recovery of structure transactions from backup on installation &lt;a href="https://github.com/MEDIT-Org/fmr/issues/277" title="https://github.com/MEDIT-Org/fmr/issues/277" target="_blank" rel="noopener">https://github.com/MEDIT-Org/fmr/issues/277&lt;/a>
+&lt;/p>
+&lt;p>&lt;strong>Improvement:&lt;/strong>&lt;/p>
+&lt;p>FMR11-183 - Update dependencies &lt;a href="https://github.com/MEDIT-Org/fmr/issues/277" title="https://github.com/MEDIT-Org/fmr/issues/277" target="_blank" rel="noopener">https://github.com/MEDIT-Org/fmr/issues/277&lt;/a>
+&lt;/p>
+&lt;p>&lt;strong>Bug Fixes:&lt;/strong>&lt;/p>
+&lt;p>FMR11-181 - SDMX CSV v 2.0 Data Format does not report its format &lt;a href="https://github.com/MEDIT-Org/fmr/issues/110" title="https://github.com/MEDIT-Org/fmr/issues/110" target="_blank" rel="noopener">https://github.com/MEDIT-Org/fmr/issues/110&lt;/a>
+&lt;br>
+FMR11-184 - Support &amp;lsquo;*&amp;rsquo; for structure type in REST API &lt;a href="https://github.com/MEDIT-Org/fmr/issues/273" title="https://github.com/MEDIT-Org/fmr/issues/273" target="_blank" rel="noopener">https://github.com/MEDIT-Org/fmr/issues/273&lt;/a>
+&lt;br>
+FMR11-185 - Failure on Compare Revision shows Stack Trace &lt;a href="https://github.com/MEDIT-Org/fmr/issues/278" title="https://github.com/MEDIT-Org/fmr/issues/278" target="_blank" rel="noopener">https://github.com/MEDIT-Org/fmr/issues/278&lt;/a>
+&lt;br>
+FMR11-186 - SDMX-JSON Writer not outputting DSD as stub &lt;a href="https://github.com/MEDIT-Org/fmr/issues/274" title="https://github.com/MEDIT-Org/fmr/issues/274" target="_blank" rel="noopener">https://github.com/MEDIT-Org/fmr/issues/274&lt;/a>
+&lt;/p></description></item><item><title>FMR 11.2.1 release</title><link>https://metadatatechnology.github.io/sdmxiopreview/notice/fmr-11.2.1-release/</link><pubDate>Fri, 09 Sep 2022 00:00:00 +0000</pubDate><guid>https://metadatatechnology.github.io/sdmxiopreview/notice/fmr-11.2.1-release/</guid><description>
 &lt;h1 id="version-1121-released-20220909">Version 11.2.1 (Released: 2022/09/09)&lt;/h1>
 &lt;p>&lt;strong>New Features:&lt;/strong>&lt;/p>
 &lt;p>FMR11-174 - Publication Tables: Formatting of Missing Values support ObsValue=NaN &lt;a href="https://github.com/MEDIT-Org/fmr/issues/253" title="https://github.com/MEDIT-Org/fmr/issues/253" target="_blank" rel="noopener">https://github.com/MEDIT-Org/fmr/issues/253&lt;/a>

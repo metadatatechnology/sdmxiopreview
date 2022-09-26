@@ -1,4 +1,28 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home – Software downloads</title><link>https://metadatatechnology.github.io/sdmxiopreview/download/</link><description>Recent content in Software downloads on Home</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>&amp;copy; 2022 Bank for International Settlements. All Rights Reserved.</copyright><lastBuildDate>Fri, 09 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://metadatatechnology.github.io/sdmxiopreview/download/index.xml" rel="self" type="application/rss+xml"/><item><title>Fusion Metadata Registry</title><link>https://metadatatechnology.github.io/sdmxiopreview/download/fmr/</link><pubDate>Fri, 09 Sep 2022 00:00:00 +0000</pubDate><guid>https://metadatatechnology.github.io/sdmxiopreview/download/fmr/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home – Software downloads</title><link>https://metadatatechnology.github.io/sdmxiopreview/download/</link><description>Recent content in Software downloads on Home</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>&amp;copy; 2022 Bank for International Settlements. All Rights Reserved.</copyright><lastBuildDate>Mon, 26 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://metadatatechnology.github.io/sdmxiopreview/download/index.xml" rel="self" type="application/rss+xml"/><item><title>Fusion Transformer</title><link>https://metadatatechnology.github.io/sdmxiopreview/download/ft/</link><pubDate>Mon, 26 Sep 2022 00:00:00 +0000</pubDate><guid>https://metadatatechnology.github.io/sdmxiopreview/download/ft/</guid><description>
+&lt;h2 id="fusion-transformer">Fusion Transformer&lt;/h2>
+&lt;p>Fusion Transformer is a Java command line application that can be run on both Windows and Unix for transforming SDMX data and structure files supporting&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Version&lt;/th>
+&lt;th>Release date&lt;/th>
+&lt;th>Download&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>2.5.0&lt;/td>
+&lt;td>15 July 2022&lt;/td>
+&lt;td>&lt;a href="https://fusionsoftware.s3.us-west-2.amazonaws.com/fusiontransformer/FusionTransformer-2.5.zip" title="https://fusionsoftware.s3.us-west-2.amazonaws.com/fusiontransformer/FusionTransformer-2.5.zip" target="_blank" rel="noopener">https://fusionsoftware.s3.us-west-2.amazonaws.com/fusiontransformer/FusionTransformer-2.5.zip&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="source-code">Source code&lt;/h2>
+&lt;p>&lt;span class="badge" style="background-color: #325da8; color:white;">Coming soon&lt;/span>&lt;/p>
+&lt;h2 id="changelog">Changelog&lt;/h2>
+&lt;p>FMR changelog: &lt;a href="https://wiki.sdmxcloud.org/Change_Log_Fusion_Transformer" title="https://wiki.sdmxcloud.org/Change_Log_Fusion_Transformer" target="_blank" rel="noopener">https://wiki.sdmxcloud.org/Change_Log_Fusion_Transformer&lt;/a>
+&lt;/p></description></item><item><title>Fusion Metadata Registry</title><link>https://metadatatechnology.github.io/sdmxiopreview/download/fmr/</link><pubDate>Fri, 09 Sep 2022 00:00:00 +0000</pubDate><guid>https://metadatatechnology.github.io/sdmxiopreview/download/fmr/</guid><description>
 &lt;h2 id="built-java-web-application">Built Java web application&lt;/h2>
 &lt;p>The FMR built Java application is supplied as a WAR file (web application archive) ready for deployment to a Java web application server. Apache Tomcat, Oracle Web Logic and RedHat JBoss are supported.&lt;/p>
 &lt;table>
@@ -10,6 +34,12 @@
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
+&lt;tr>
+&lt;td>11.3.0&lt;/td>
+&lt;td>26 Sept 2022&lt;/td>
+&lt;td>&lt;a href="https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.3.0.zip" title="https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.3.0.zip" target="_blank" rel="noopener">https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.3.0.zip&lt;/a>
+&lt;/td>
+&lt;/tr>
 &lt;tr>
 &lt;td>11.2.1&lt;/td>
 &lt;td>09 Sept 2022&lt;/td>
