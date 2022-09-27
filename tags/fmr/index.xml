@@ -103,10 +103,10 @@ data-height="332"
 &lt;p>Custom Expressions provide the flexibility of targeted rules and arithmetic expressions including addition, subtraction, multiplication and division.&lt;/p>
 &lt;p>However, for checking consistency between aggregation levels where the sum of lower levels should equal the values at higher levels, Hierarchies (Hierarchical Codelists in SDMX 2.1) could be the answer particularly where there are many levels. In these cases, a single Hierarchy replaces many discrete Custom Expressions reducing the creation and maintenance burden.&lt;/p>
 &lt;h2 id="references">References&lt;/h2>
-&lt;p>Fusion Metadata Registry: &lt;a href="https://metadatatechnology.github.io/sdmxiopreviewdownload/fmr">
+&lt;p>Fusion Metadata Registry: &lt;a href="https://metadatatechnology.github.io/sdmxiopreview/download/fmr">
 download FMR 11
 &lt;/a>&lt;br>
-Fusion Metadata Registry: &lt;a href="https://metadatatechnology.github.io/sdmxiopreviewcontainers/fmr-docker-mysql">
+Fusion Metadata Registry: &lt;a href="https://metadatatechnology.github.io/sdmxiopreview/containers/fmr-docker-mysql">
 FMR 11 Docker image
 &lt;/a>&lt;/p></description></item><item><title>How to use an external database with the FMR Docker image</title><link>https://metadatatechnology.github.io/sdmxiopreview/blog/how-to-use-an-external-database-with-fmr-docker/</link><pubDate>Tue, 05 Jul 2022 22:22:00 +0800</pubDate><guid>https://metadatatechnology.github.io/sdmxiopreview/blog/how-to-use-an-external-database-with-fmr-docker/</guid><description>
 &lt;p>The standard &lt;a href="https://hub.docker.com/r/metadatatechnology/fmr-mysql" title="FMR Docker image" target="_blank" rel="noopener">FMR Docker image&lt;/a>
