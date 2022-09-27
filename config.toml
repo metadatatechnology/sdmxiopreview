@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://metadatatechnology.github.io/sdmxiopreview/"
+baseURL = "https://metadatatechnology.github.io/sdmxiopreview"
 title = "Home"
 # post pagination
 paginate = "10"
