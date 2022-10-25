@@ -6,7 +6,7 @@
     <!-- post meta -->
     <ul class="list-inline mb-3">
       <!-- post date -->
-      <li class="list-inline-item mr-3 ml-0"><i class="ti-calendar"></i> {{ default (i18n "dateFormat") .Site.Params.dateformat | .PublishDate.Format }}</li>
+      <li class="list-inline-item mr-3 ml-0"><i class="ti-pencil-alt"></i> {{ .Params.author}}</li>
       <!-- categories -->
       <li class="list-inline-item mr-4 mb-3 mb-md-0 text-light"><i class="ti-tag"></i>
                   {{ range $index, $elements:= .Params.Categories }}<a
