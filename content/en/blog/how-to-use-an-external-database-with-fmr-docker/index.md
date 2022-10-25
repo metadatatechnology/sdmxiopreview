@@ -5,6 +5,7 @@ image: "images/posts/docker-logo.png"
 categories: ["FMR"]
 tags: ["FMR","Docker","installation","administration"]
 date: 2022-07-05T22:22:00+08:00
+author: "BIS"
 type: "post"
 ---
 

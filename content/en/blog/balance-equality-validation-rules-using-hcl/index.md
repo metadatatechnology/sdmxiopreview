@@ -5,6 +5,7 @@ image: "images/posts/dataquality.png"
 categories: ["FMR"]
 tags: ["FMR","Validation","Hierarchies"]
 date: 2022-07-22T22:22:00+08:00
+author: "BIS"
 type: "post"
 ---
 
