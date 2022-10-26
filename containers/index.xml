@@ -1,4 +1,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home – Containerised environments</title><link>https://metadatatechnology.github.io/sdmxiopreview/containers/</link><description>Recent content in Containerised environments on Home</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>&amp;copy; 2022 Bank for International Settlements. All Rights Reserved.</copyright><lastBuildDate>Fri, 05 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://metadatatechnology.github.io/sdmxiopreview/containers/index.xml" rel="self" type="application/rss+xml"/><item><title>FMR Docker with embedded MySQL</title><link>https://metadatatechnology.github.io/sdmxiopreview/containers/fmr-docker-mysql/</link><pubDate>Fri, 05 Aug 2022 00:00:00 +0000</pubDate><guid>https://metadatatechnology.github.io/sdmxiopreview/containers/fmr-docker-mysql/</guid><description>
+&lt;h2 id="quick-start">Quick start&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>Download and install &lt;a href="https://www.docker.com/products/docker-desktop/" target="_blank">Docker Desktop&lt;/a> (if not already installed)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Start a Windows Command Prompt or a bash shell and run the following command:&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">docker run --name fmr -p 8080:8080 metadatatechnology/fmr-mysql:latest
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="3">
+&lt;li>
+&lt;p>Navigate to &lt;a href="http://localhost:8080">http://localhost:8080&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Log in with username: root and password: password&lt;/p>
+&lt;/li>
+&lt;/ol>
 &lt;h2 id="overview">Overview&lt;/h2>
 &lt;p>A self-contained Docker image providing everything required for a basic functional FMR installation. It&amp;rsquo;s simple to download and install requring only Docker Desktop or another Docker container runtime. Note that the instructions here are focus on Docker Desktop.&lt;/p>
 &lt;p>The content is persistent within the container so your structures will still be there even if you stop and restart.&lt;/p>

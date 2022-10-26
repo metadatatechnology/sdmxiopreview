@@ -476,7 +476,8 @@ textarea.form-control {
     font-size: 1em; }
   .content pre {
     padding: 10px 20px;
-    background: #f8f9fe; }
+    background: #131314;
+    color: #cdd8e3; }
 
 .partner-thumb-sm {
   height: 85px;

@@ -1,4 +1,34 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home – Notice</title><link>https://metadatatechnology.github.io/sdmxiopreview/notice/</link><description>Recent content in Notice on Home</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>&amp;copy; 2022 Bank for International Settlements. All Rights Reserved.</copyright><lastBuildDate>Mon, 26 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://metadatatechnology.github.io/sdmxiopreview/notice/index.xml" rel="self" type="application/rss+xml"/><item><title>FMR 11.3.0 release</title><link>https://metadatatechnology.github.io/sdmxiopreview/notice/fmr-11.3.0-release/</link><pubDate>Mon, 26 Sep 2022 00:00:00 +0000</pubDate><guid>https://metadatatechnology.github.io/sdmxiopreview/notice/fmr-11.3.0-release/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home – Notice</title><link>https://metadatatechnology.github.io/sdmxiopreview/notice/</link><description>Recent content in Notice on Home</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>&amp;copy; 2022 Bank for International Settlements. All Rights Reserved.</copyright><lastBuildDate>Fri, 14 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://metadatatechnology.github.io/sdmxiopreview/notice/index.xml" rel="self" type="application/rss+xml"/><item><title>FMR 11.4.0 release</title><link>https://metadatatechnology.github.io/sdmxiopreview/notice/fmr-11.4.0-release/</link><pubDate>Fri, 14 Oct 2022 00:00:00 +0000</pubDate><guid>https://metadatatechnology.github.io/sdmxiopreview/notice/fmr-11.4.0-release/</guid><description>
+&lt;h1 id="version-1140-released-20221014">Version 11.4.0 (Released: 2022/10/14)&lt;/h1>
+&lt;p>&lt;strong>New Features:&lt;/strong>&lt;/p>
+&lt;p>FMR11-194 - Publication Table - support casting dates more then once in same expression&lt;/p>
+&lt;p>&lt;strong>Changes:&lt;/strong>
+FMR11-190 - Open source licensing compatibility changes: Removal of alertifyjs dependency &lt;a href="https://github.com/MEDIT-Org/fmr/issues/280" title="https://github.com/MEDIT-Org/fmr/issues/280" target="_blank" rel="noopener">https://github.com/MEDIT-Org/fmr/issues/280&lt;/a>
+&lt;br>
+FMR11-191 - Open source licensing compatibility changes: Removal of dependency: jscolor &lt;a href="https://github.com/MEDIT-Org/fmr/issues/282" title="https://github.com/MEDIT-Org/fmr/issues/282" target="_blank" rel="noopener">https://github.com/MEDIT-Org/fmr/issues/282&lt;/a>
+&lt;br>
+FMR11-192 - Open source licensing compatibility changes: Remove MySQL Connector &lt;a href="https://github.com/MEDIT-Org/fmr/issues/283" title="https://github.com/MEDIT-Org/fmr/issues/283" target="_blank" rel="noopener">https://github.com/MEDIT-Org/fmr/issues/283&lt;/a>
+&lt;br>
+FMR11-193 - Open source licensing compatibility changes: Change FontAwesome to MIT Licensed version &lt;a href="https://github.com/MEDIT-Org/fmr/issues/281" title="https://github.com/MEDIT-Org/fmr/issues/281" target="_blank" rel="noopener">https://github.com/MEDIT-Org/fmr/issues/281&lt;/a>
+&lt;/p>
+&lt;p>&lt;strong>Improvement:&lt;/strong>&lt;/p>
+&lt;p>FMR11-202 - Update dependencies: Hibernate, Spring-Kafka, Jettison and Jersey &lt;a href="https://github.com/MEDIT-Org/fmr/issues/294" title="https://github.com/MEDIT-Org/fmr/issues/294" target="_blank" rel="noopener">https://github.com/MEDIT-Org/fmr/issues/294&lt;/a>
+&lt;/p>
+&lt;p>&lt;strong>Bug Fixes:&lt;/strong>&lt;/p>
+&lt;p>FMR11-189 - Behaviour of web service resolving multiple Codelist inheritance with &amp;ldquo;details=raw&amp;rdquo; &lt;a href="https://github.com/MEDIT-Org/fmr/issues/257" title="https://github.com/MEDIT-Org/fmr/issues/257" target="_blank" rel="noopener">https://github.com/MEDIT-Org/fmr/issues/257&lt;/a>
+&lt;br>
+FMR11-196 - Unable to read Excel Spreadsheet where all Frequencies are Formulas&lt;br>
+FMR11-197 - Request for Codelist in SDMX-JSON, &amp;ldquo;details=raw&amp;rdquo;, references=&amp;ldquo;children&amp;rdquo; doesn&amp;rsquo;t return children as raw &lt;a href="https://github.com/MEDIT-Org/fmr/issues/257" title="https://github.com/MEDIT-Org/fmr/issues/257" target="_blank" rel="noopener">https://github.com/MEDIT-Org/fmr/issues/257&lt;/a>
+&lt;br>
+FMR11-198 - Request for Codelist in SDMX-JSON, &amp;ldquo;details=raw&amp;rdquo;, references=&amp;ldquo;descendants&amp;rdquo; doesn&amp;rsquo;t return descendants &lt;a href="https://github.com/MEDIT-Org/fmr/issues/257" title="https://github.com/MEDIT-Org/fmr/issues/257" target="_blank" rel="noopener">https://github.com/MEDIT-Org/fmr/issues/257&lt;/a>
+&lt;br>
+FMR11-199 - &amp;ldquo;Metadata Provider Scheme&amp;rdquo; not listed on Web Service -&amp;gt; Structures page&lt;br>
+FMR11-200 - &amp;ldquo;Metadata Provider Wizard&amp;rdquo; does not allow Providers to start with a numeric yet the SDMX Standard allows this&lt;br>
+FMR11-201 - &amp;ldquo;Metadata Provider Scheme&amp;rdquo; not listed on Cross References page&lt;br>
+FMR11-202 - Update dependencies: Hibernate, Spring-Kafka, Jettison and Jersey &lt;a href="https://github.com/MEDIT-Org/fmr/issues/294" title="https://github.com/MEDIT-Org/fmr/issues/294" target="_blank" rel="noopener">https://github.com/MEDIT-Org/fmr/issues/294&lt;/a>
+&lt;br>
+FMR11-203 - Attaching Reference Metadata to Items in an item scheme fails to add link (cache issue)&lt;br>
+FMR11-205 - Version Number not Displayed when Selected Item on Page Load&lt;/p></description></item><item><title>FMR 11.3.0 release</title><link>https://metadatatechnology.github.io/sdmxiopreview/notice/fmr-11.3.0-release/</link><pubDate>Mon, 26 Sep 2022 00:00:00 +0000</pubDate><guid>https://metadatatechnology.github.io/sdmxiopreview/notice/fmr-11.3.0-release/</guid><description>
 &lt;h1 id="version-1130-released-20220926">Version 11.3.0 (Released: 2022/09/26)&lt;/h1>
 &lt;p>&lt;strong>New Features:&lt;/strong>&lt;/p>
 &lt;p>FMR11-187 - Support recovery of structure transactions from backup on installation &lt;a href="https://github.com/MEDIT-Org/fmr/issues/277" title="https://github.com/MEDIT-Org/fmr/issues/277" target="_blank" rel="noopener">https://github.com/MEDIT-Org/fmr/issues/277&lt;/a>

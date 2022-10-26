@@ -1,4 +1,84 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home – Software downloads</title><link>https://metadatatechnology.github.io/sdmxiopreview/download/</link><description>Recent content in Software downloads on Home</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>&amp;copy; 2022 Bank for International Settlements. All Rights Reserved.</copyright><lastBuildDate>Mon, 26 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://metadatatechnology.github.io/sdmxiopreview/download/index.xml" rel="self" type="application/rss+xml"/><item><title>Fusion Transformer</title><link>https://metadatatechnology.github.io/sdmxiopreview/download/ft/</link><pubDate>Mon, 26 Sep 2022 00:00:00 +0000</pubDate><guid>https://metadatatechnology.github.io/sdmxiopreview/download/ft/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home – Software downloads</title><link>https://metadatatechnology.github.io/sdmxiopreview/download/</link><description>Recent content in Software downloads on Home</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>&amp;copy; 2022 Bank for International Settlements. All Rights Reserved.</copyright><lastBuildDate>Fri, 14 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://metadatatechnology.github.io/sdmxiopreview/download/index.xml" rel="self" type="application/rss+xml"/><item><title>Fusion Metadata Registry</title><link>https://metadatatechnology.github.io/sdmxiopreview/download/fmr/</link><pubDate>Fri, 14 Oct 2022 00:00:00 +0000</pubDate><guid>https://metadatatechnology.github.io/sdmxiopreview/download/fmr/</guid><description>
+&lt;h2 id="built-java-web-application">Built Java web application&lt;/h2>
+&lt;p>The FMR built Java application is supplied as a WAR file (web application archive) ready for deployment to a Java web application server. Apache Tomcat, Oracle Web Logic and RedHat JBoss are supported.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Version&lt;/th>
+&lt;th>Release date&lt;/th>
+&lt;th>Download&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>11.4.0&lt;/td>
+&lt;td>14 Oct 2022&lt;/td>
+&lt;td>&lt;a href="https://sdmxio.s3.eu-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.4.0.zip" title="https://sdmxio.s3.eu-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.4.0.zip" target="_blank" rel="noopener">https://sdmxio.s3.eu-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.4.0.zip&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>11.3.0&lt;/td>
+&lt;td>26 Sep 2022&lt;/td>
+&lt;td>&lt;a href="https://sdmxio.s3.eu-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.3.0.zip" title="https://sdmxio.s3.eu-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.3.0.zip" target="_blank" rel="noopener">https://sdmxio.s3.eu-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.3.0.zip&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>11.2.2&lt;/td>
+&lt;td>13 Sep 2022&lt;/td>
+&lt;td>&lt;a href="https://sdmxio.s3.eu-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.2.2.zip" title="https://sdmxio.s3.eu-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.2.2.zip" target="_blank" rel="noopener">https://sdmxio.s3.eu-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.2.2.zip&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>11.2.1&lt;/td>
+&lt;td>09 Sep 2022&lt;/td>
+&lt;td>&lt;a href="https://sdmxio.s3.eu-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.2.1.zip" title="https://sdmxio.s3.eu-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.2.1.zip" target="_blank" rel="noopener">https://sdmxio.s3.eu-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.2.1.zip&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>11.2.0&lt;/td>
+&lt;td>22 Jul 2022&lt;/td>
+&lt;td>&lt;a href="https://sdmxio.s3.eu-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.2.0.zip" title="https://sdmxio.s3.eu-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.2.0.zip" target="_blank" rel="noopener">https://sdmxio.s3.eu-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.2.0.zip&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>11.1.5&lt;/td>
+&lt;td>01 Jun 2022&lt;/td>
+&lt;td>&lt;a href="https://sdmxio.s3.eu-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.1.5.zip" title="https://sdmxio.s3.eu-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.1.5.zip" target="_blank" rel="noopener">https://sdmxio.s3.eu-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.1.5.zip&lt;/a>
+&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="docker">Docker&lt;/h2>
+&lt;p>An &lt;a href="https://metadatatechnology.github.io/sdmxiopreview/containers/fmr-docker-mysql">
+FMR Docker image
+&lt;/a> is also available as an alternative to downloading and installing the Java web application. Docker provides a fully working FMR installation in less than 10 minutes suitable for testing, personal use and light production workloads.&lt;/p>
+&lt;p>The rest of this article refers to the installing the FMR Java web application directly onto a machine.&lt;/p>
+&lt;h2 id="changelog">Changelog&lt;/h2>
+&lt;p>FMR changelog: &lt;a href="https://fmrwiki.sdmxcloud.org/Change_Log" title="https://fmrwiki.sdmxcloud.org/Change_Log" target="_blank" rel="noopener">https://fmrwiki.sdmxcloud.org/Change_Log&lt;/a>
+&lt;/p>
+&lt;h2 id="system-requirements">System requirements&lt;/h2>
+&lt;ul>
+&lt;li>Windows, Linux or Apple Mac&lt;/li>
+&lt;li>Minimum 4GB memory - additional memory could be required if processing large datasets or storing large volumes of metadata&lt;/li>
+&lt;li>Minimum 2 core CPU&lt;/li>
+&lt;li>Optionally a Microsoft Active Directory or LDAP service for user authentication&lt;/li>
+&lt;/ul>
+&lt;h2 id="installation-instructions">Installation instructions&lt;/h2>
+&lt;p>&lt;a href="https://fmrwiki.sdmxcloud.org/Quick_start_guide_-_Windows,_Linux_or_Mac" title="https://fmrwiki.sdmxcloud.org/Quick_start_guide_-_Windows,_Linux_or_Mac" target="_blank" rel="noopener">https://fmrwiki.sdmxcloud.org/Quick_start_guide_-_Windows,_Linux_or_Mac&lt;/a>
+&lt;/p>
+&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
+&lt;p>FMR is a Java web application which requires the following:&lt;/p>
+&lt;ul>
+&lt;li>Java runtime environment. &lt;a href="https://www.java.com/en/">Oracle Java&lt;/a> or &lt;a href="https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/downloads-list.html">Amazon Corretto&lt;/a> are good options.&lt;/li>
+&lt;li>Java web application server. &lt;a href="https://tomcat.apache.org/download-90.cgi">Apache Tomcat 9.0&lt;/a> is recommended. Other options include JBoss and Oracle WebLogic.&lt;/li>
+&lt;li>SQL database. &lt;a href="https://dev.mysql.com/downloads/mysql/">MySQL 8&lt;/a>, Microsoft SQL Server or Oracle are supported.&lt;/li>
+&lt;/ul>
+&lt;h2 id="mysql-installation-notes">MySQL installation notes&lt;/h2>
+&lt;p>From release 11.4.0, the MySQL database connector (otherwise known as the JDBC driver) is no longer bundled with the FMR distribution and must be installed separately. The following article explains how to obtain and install the connector &lt;a href="https://fmrwiki.sdmxcloud.org/Install_MySQL#Obtaining_and_Specifying_the_MySQL_JDBC_Driver" title="https://fmrwiki.sdmxcloud.org/Install_MySQL#Obtaining_and_Specifying_the_MySQL_JDBC_Driver" target="_blank" rel="noopener">https://fmrwiki.sdmxcloud.org/Install_MySQL#Obtaining_and_Specifying_the_MySQL_JDBC_Driver&lt;/a>
+&lt;/p>
+&lt;h2 id="source-code">Source code&lt;/h2>
+&lt;p>Contact us at &lt;a href="mailto:contact@sdmx.io" title="contact@sdmx.io">contact@sdmx.io&lt;/a>
+for access to the source code&lt;/p></description></item><item><title>Fusion Transformer</title><link>https://metadatatechnology.github.io/sdmxiopreview/download/ft/</link><pubDate>Mon, 26 Sep 2022 00:00:00 +0000</pubDate><guid>https://metadatatechnology.github.io/sdmxiopreview/download/ft/</guid><description>
 &lt;h2 id="fusion-transformer">Fusion Transformer&lt;/h2>
 &lt;p>Fusion Transformer is a Java command line application that can be run on both Windows and Unix for transforming SDMX data and structure files supporting EDI, XML, JSON and CSV.&lt;/p>
 &lt;table>
@@ -13,69 +93,27 @@
 &lt;tr>
 &lt;td>2.5.0&lt;/td>
 &lt;td>15 July 2022&lt;/td>
-&lt;td>&lt;a href="https://fusionsoftware.s3.us-west-2.amazonaws.com/fusiontransformer/FusionTransformer-2.5.zip" title="https://fusionsoftware.s3.us-west-2.amazonaws.com/fusiontransformer/FusionTransformer-2.5.zip" target="_blank" rel="noopener">https://fusionsoftware.s3.us-west-2.amazonaws.com/fusiontransformer/FusionTransformer-2.5.zip&lt;/a>
+&lt;td>&lt;a href="https://sdmxio.s3.eu-west-2.amazonaws.com/fusiontransformer/FusionTransformer-2.5.zip" title="https://sdmxio.s3.eu-west-2.amazonaws.com/fusiontransformer/FusionTransformer-2.5.zip" target="_blank" rel="noopener">https://sdmxio.s3.eu-west-2.amazonaws.com/fusiontransformer/FusionTransformer-2.5.zip&lt;/a>
 &lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
+&lt;h2 id="system-requirements">System requirements&lt;/h2>
+&lt;ul>
+&lt;li>Windows, Linux or Apple Mac&lt;/li>
+&lt;li>Minimum 4GB memory - additional memory could be required if processing large datasets or storing large volumes of metadata&lt;/li>
+&lt;li>Minimum 2 core CPU&lt;/li>
+&lt;/ul>
+&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
+&lt;p>Fusion Transformer is a Java command line application:&lt;/p>
+&lt;ul>
+&lt;li>Java runtime environment. &lt;a href="https://www.java.com/en/">Oracle Java&lt;/a> or &lt;a href="https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/downloads-list.html">Amazon Corretto&lt;/a> are good options.&lt;/li>
+&lt;/ul>
 &lt;h2 id="source-code">Source code&lt;/h2>
-&lt;p>&lt;span class="badge" style="background-color: #325da8; color:white;">Coming soon&lt;/span>&lt;/p>
+&lt;p>Contact us at &lt;a href="mailto:contact@sdmx.io" title="contact@sdmx.io">contact@sdmx.io&lt;/a>
+for access to the source code&lt;/p>
 &lt;h2 id="changelog">Changelog&lt;/h2>
 &lt;p>FMR changelog: &lt;a href="https://wiki.sdmxcloud.org/Change_Log_Fusion_Transformer" title="https://wiki.sdmxcloud.org/Change_Log_Fusion_Transformer" target="_blank" rel="noopener">https://wiki.sdmxcloud.org/Change_Log_Fusion_Transformer&lt;/a>
-&lt;/p></description></item><item><title>Fusion Metadata Registry</title><link>https://metadatatechnology.github.io/sdmxiopreview/download/fmr/</link><pubDate>Fri, 09 Sep 2022 00:00:00 +0000</pubDate><guid>https://metadatatechnology.github.io/sdmxiopreview/download/fmr/</guid><description>
-&lt;h2 id="built-java-web-application">Built Java web application&lt;/h2>
-&lt;p>The FMR built Java application is supplied as a WAR file (web application archive) ready for deployment to a Java web application server. Apache Tomcat, Oracle Web Logic and RedHat JBoss are supported.&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>Version&lt;/th>
-&lt;th>Release date&lt;/th>
-&lt;th>Download&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>11.3.0&lt;/td>
-&lt;td>26 Sept 2022&lt;/td>
-&lt;td>&lt;a href="https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.3.0.zip" title="https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.3.0.zip" target="_blank" rel="noopener">https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.3.0.zip&lt;/a>
-&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>11.2.1&lt;/td>
-&lt;td>09 Sept 2022&lt;/td>
-&lt;td>&lt;a href="https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.2.1.zip" title="https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.2.1.zip" target="_blank" rel="noopener">https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.2.1.zip&lt;/a>
-&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>11.2.0&lt;/td>
-&lt;td>22 July 2022&lt;/td>
-&lt;td>&lt;a href="https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.2.0.zip" title="https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.2.0.zip" target="_blank" rel="noopener">https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.2.0.zip&lt;/a>
-&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>11.1.7&lt;/td>
-&lt;td>06 July 2022&lt;/td>
-&lt;td>&lt;a href="https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.1.7.zip" title="https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.1.7.zip" target="_blank" rel="noopener">https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.1.7.zip&lt;/a>
-&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>11.1.6&lt;/td>
-&lt;td>23 June 2022&lt;/td>
-&lt;td>&lt;a href="https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.1.6.zip" title="https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.1.6.zip" target="_blank" rel="noopener">https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.1.6.zip&lt;/a>
-&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>11.1.5&lt;/td>
-&lt;td>01 June 2022&lt;/td>
-&lt;td>&lt;a href="https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.1.5.zip" title="https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.1.5.zip" target="_blank" rel="noopener">https://fusionsoftware.s3.us-west-2.amazonaws.com/FusionMetadataRegistry/FusionMetadataRegistry-11.1.5.zip&lt;/a>
-&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;h2 id="source-code">Source code&lt;/h2>
-&lt;p>&lt;span class="badge" style="background-color: #325da8; color:white;">Coming soon&lt;/span>&lt;/p>
-&lt;h2 id="changelog">Changelog&lt;/h2>
-&lt;p>FMR changelog: &lt;a href="https://fmrwiki.sdmxcloud.org/Change_Log" title="https://fmrwiki.sdmxcloud.org/Change_Log" target="_blank" rel="noopener">https://fmrwiki.sdmxcloud.org/Change_Log&lt;/a>
 &lt;/p></description></item><item><title>FusionXL</title><link>https://metadatatechnology.github.io/sdmxiopreview/download/fxl/</link><pubDate>Mon, 08 Aug 2022 00:00:00 +0000</pubDate><guid>https://metadatatechnology.github.io/sdmxiopreview/download/fxl/</guid><description>
 &lt;h2 id="fuxionxl-xlam-addin">FuxionXL XLAM addin&lt;/h2>
 &lt;p>FusionXL is supplied as a single Excel XLAM addin file that can be installed using Excel&amp;rsquo;s addin management function.&lt;/p>
