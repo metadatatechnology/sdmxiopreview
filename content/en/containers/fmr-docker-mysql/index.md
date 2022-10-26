@@ -16,6 +16,21 @@ type: "containers"
 Topic: "FMR"
 ---
 
+## Quick start
+1. Download and install <a href="https://www.docker.com/products/docker-desktop/" target="_blank">Docker Desktop</a> (if not already installed)
+
+2. Start a Windows Command Prompt or a bash shell and run the following command:
+
+```bash
+docker run --name fmr -p 8080:8080 metadatatechnology/fmr-mysql:latest
+```
+
+3. Navigate to <a href="http://localhost:8080">http://localhost:8080</a>
+
+4. Log in with username: root and password: password
+
+
+
 ## Overview
 
 A self-contained Docker image providing everything required for a basic functional FMR installation. It's simple to download and install requring only Docker Desktop or another Docker container runtime. Note that the instructions here are focus on Docker Desktop.
@@ -59,7 +74,7 @@ docker container create --name fmr --publish 8080:8080 metadatatechnology/fmr-my
 ## Start up
 
 #### Start the FMR container
-```bash
+``` bash
 docker start fmr
 ```
 The container will take between 1 and 2 minutes to start.

@@ -239,18 +239,6 @@ URL = "notice"
 weight = 6
 
 [[menu.main]]
-name = "Help"
-URL= "help"
-weight=7
-identifier="help"
-
-[[menu.main]]
-name = "Raise an issue on GitHub"
-URL = "https://github.com/glennmdt/sdmxio/issues"
-weight=1
-parent="help"
-
-[[menu.main]]
 name = "Contact"
 URL = "contact"
 weight = 20
