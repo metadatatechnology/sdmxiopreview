@@ -3,7 +3,6 @@ title: "FMR 11.1.7 release"
 date: 2022-07-06T00:00:00+00:00
 draft: false
 bg_image: "images/backgrounds/page-title.jpg"
-aliases: "/posts/a-ballerina-china-ambassador-required"
 description: "Fusion Metadata Registry update"
 link: "download/fmr"
 button_text: "Download"
